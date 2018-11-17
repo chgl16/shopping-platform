@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!-- alias别名 -->
+    <typeAliases>
+        <!-- 包扫描定义 -->
+        <package name="xyz.cglzwz.domain"/>
+    </typeAliases>
+
+    <!-- 已经在spring配置数据源 -->
+    <!-- 事务管理没有配置 -->
+
+    <!-- 映射文件已经在spring sql里面配置了
+    <mappers>
+        <mapper resource="xyz/cglzwz/mybatis/demo1/mapper/RoleMapper.xml"/>
+    </mappers>
+    -->
+</configuration>

@@ -1,0 +1,88 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+    <display-name>Archetype Created Web Application</display-name>
+
+    <icon>
+        <large-icon>/icon/icon.gif</large-icon>
+    </icon>
+
+    <!--如果在web.xml中不写任何参数配置信息，默认的路径是"/WEB-INF/applicationContext.xml，
+    在WEB-INF目录下创建的xml文件的名称必须是applicationContext.xml。
+    如果是要自定义文件名可以在web.xml里加入contextConfigLocation这个context参数：
+    在<param-value> </param-value>里指定相应的xml文件名，如果有多个xml文件，可以写在一起并以“,”号分隔。
+    也可以这样applicationContext-*.xml采用通配符，比如这那个目录下有applicationContext-ibatis-base.xml，
+    applicationContext-action.xml，applicationContext-ibatis-dao.xml等文件，都会一同被载入。
+    在ContextLoaderListener中关联了ContextLoader这个类，所以整个加载配置过程由ContextLoader来完成。-->
+
+    <!--部署spring的applicationContext的xml文件-->
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath:spring/applicationContext.xml</param-value>
+    </context-param>
+
+    <!-- 编码过滤器 -->
+    <filter>
+        <filter-name>characterEncodingFilter</filter-name>
+        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>characterEncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.js</url-pattern>
+        <url-pattern>*.css</url-pattern>
+
+        <url-pattern>/images/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>dispatcher</servlet-name>
+        <!--在DispatcherServlet的初始化过程中，框架会在web应用的 WEB-INF文件夹下寻找名为[servlet-name]-servlet.xml 的配置文件，生成文件中定义的bean。-->
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <!--指明了配置文件的文件名，不使用默认配置文件名，而使用dispatcher-servlet.xml配置文件。-->
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <!--其中<param-value>**.xml</param-value> 这里可以使用多种写法-->
+            <!--1、不写,使用默认值:/WEB-INF/<servlet-name>-servlet.xml-->
+            <!--2、<param-value>/WEB-INF/classes/dispatcher-servlet.xml</param-value>-->
+            <!--3、<param-value>classpath*:dispatcher-servlet.xml</param-value>-->
+            <!--4、多个值用逗号分隔-->
+            <param-value>classpath:springmvc/dispatcher-servlet.xml</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup><!--是启动顺序，让这个Servlet随Servletp容器一起启动。-->
+
+       <multipart-config>
+            <!--临时文件的目录-->
+            <location>/home/lin/</location>
+            <!-- 上传文件最大2M -->
+            <max-file-size>2097152</max-file-size>
+            <!-- 上传文件整个请求不超过4M -->
+            <max-request-size>4194304</max-request-size>
+        </multipart-config>
+
+    </servlet>
+
+    <servlet-mapping>
+        <!--这个Servlet的名字是dispatcher，可以有多个DispatcherServlet，是通过名字来区分的。每一个DispatcherServlet有自己的WebApplicationContext上下文对象。同时保存的ServletContext中和Request对象中.-->
+        <!--ApplicationContext是Spring的核心，Context我们通常解释为上下文环境，我想用“容器”来表述它更容易理解一些，ApplicationContext则是“应用的容器”了:P，Spring把Bean放在这个容器中，在需要的时候，用getBean方法取出-->
+        <servlet-name>dispatcher</servlet-name>
+        <!--Servlet拦截匹配规则可以自已定义，当映射为@RequestMapping("/user/add")时，为例,拦截哪种URL合适？-->
+        <!--1、拦截*.do、*.htm， 例如：/user/add.do,这是最传统的方式，最简单也最实用。不会导致静态文件（jpg,js,css）被拦截。-->
+        <!--2、拦截/，例如：/user/add,可以实现现在很流行的REST风格。很多互联网类型的应用很喜欢这种风格的URL。弊端：会导致静态文件（jpg,js,css）被拦截后不能正常显示。 -->
+        <url-pattern>/</url-pattern> <!--会拦截URL中带“/”的请求。-->
+    </servlet-mapping>
+</web-app>

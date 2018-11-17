@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 15px;
+    height: 100%;
+}
+body{
+    -webkit-display:flex;
+    display:flex;
+    -webkit-align-items:center;
+    align-items:center;
+    -webkit-justify-content:center;
+    justify-content:center;
+    height: 100%;
+    overflow: hidden;
+    background-image: url(../img/2.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.register{
+    border: 1px #ccc solid;
+    width: 70%;
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: rgba(0, 0, 0, 0.07);
+    color: #fff;
+}
+.register-title{
+    text-align: center;
+}
+.register-input{
+    width: 100%;
+    display: flex;
+    height: 2rem;
+    overflow: hidden;
+    border:1px solid #ccc;
+    border-radius: .2rem;
+    background-color: rgba(0, 0, 0, 0.07);
+    color: #fff;
+}
+.check-tip{
+    width: 100%;
+    height: 1rem;
+    text-align: center;
+    color:#74ff22cc;
+    font-size: .6rem; 
+}
+
+
+.register-input input,.register-input input[type="radio"] {
+   flex-grow: 1;
+   overflow: hidden;
+   border: none;
+   outline: none;
+   background-color:transparent;
+   color: #fff;
+   font-size: .7rem;
+   cursor: pointer;
+}
+
+input[type="radio"] {
+    width: .8rem;
+    height: .8rem;
+}
+.register-icon{
+    line-height: 2rem;
+}
+.register-icon .iconfont{
+    font-size: 1.7rem ;
+}
+.code{
+    background-color: rgba(0, 0, 0, 0.07);
+    color: #fff;
+    font-size:1rem;
+    margin-left:auto;
+    width: 5rem;
+    cursor:pointer;
+    height: 100%;
+    line-height: 2rem;
+    text-align: center;
+}
+
+/* chgl添加 */
+.href-tip a{
+    font-size: 0.8rem;
+    color: gray;
+    margin-top: 0.2rem;
+    float: right;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #fff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #fff;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #fff;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #fff;
+}
+
+.select-right{
+    height: 2rem;
+    line-height: 2rem;
+}
+
+
+@media (min-width: 500px) {
+
+    html{
+        font-size: 30px;
+    }
+    .register {
+      width:400px;
+    }
+    
+  }

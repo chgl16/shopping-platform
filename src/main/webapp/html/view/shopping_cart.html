@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+    <link rel="stylesheet" type="text/css" href="../../font/iconfont.css">
+    <link rel="stylesheet" href="../../css/mescroll.css">
+    <link rel="stylesheet" href="../../lib/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/mescroll.css">
+</head>
+<body>
+    <div class="page-group">
+        <div class="page page-current">
+             <header class="bar bar-nav">
+                <a href="index.html" class="icon icon-left pull-left external"></a>
+                <h1 class='title'>购物车(67)</h1>
+            </header>
+            <div class="content">
+
+                <div class="shop-cart-list">
+                    <div class="shop-cart-store">
+                        <span class="shop-cart-checkbox">
+                            <input type="checkbox" class="checkbox-input">
+                        </span>
+                        <a href="" class="shop-cart-store-name external">
+                            <i class="iconfont icon-dianpu"></i>
+                            <span class="store-name">欧贝斯化妆品旗舰</span>
+                            <i class="iconfont icon-go"></i>
+                        </a>
+                    </div>
+                    <div class="shop-cart-product">
+                         <span class="shop-cart-checkbox">
+                            <input type="checkbox" class="checkbox-input">
+                        </span>
+                        <img class="shop-cart-product-img" src="../../img/loading.gif" alt="">
+                        <div class="shop-cart-product-detail">
+                            <div class="shop-cart-product-content">Obeis欧贝斯水平衡补水精华霜50g 保湿专柜正品面霜无添加不刺激</div>
+                            <div class="shop-cart-product-price">
+                                <div class="shop-cart-product-num"><span>￥</span><span class="num">36.5</span></div>
+                                <div class="shop-cart-product-count">
+                                    <a onclick="a('+');">+</a>
+                                    <input id="inputVal" onblur="b(this.value);" onkeyup="this.value=this.value.replace(/\D/gi,'')" value="1" type="text">
+                                    <a onclick="a('-');">-</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-cart-list">
+                    <div class="shop-cart-store">
+                        <span class="shop-cart-checkbox">
+                            <input type="checkbox" class="checkbox-input">
+                        </span>
+                        <a href="" class="shop-cart-store-name external">
+                            <i class="iconfont icon-dianpu"></i>
+                            <span class="store-name">欧贝斯化妆品旗舰</span>
+                            <i class="iconfont icon-go"></i>
+                        </a>
+                    </div>
+                    <div class="shop-cart-product">
+                         <span class="shop-cart-checkbox">
+                            <input type="checkbox" class="checkbox-input">
+                        </span>
+                        <img class="shop-cart-product-img" src="../../img/loading.gif" alt="">
+                        <div class="shop-cart-product-detail">
+                            <div class="shop-cart-product-content">Obeis欧贝斯水平衡补水精华霜50g 保湿专柜正品面霜无添加不刺激</div>
+                            <div class="shop-cart-product-price">
+                                <div class="shop-cart-product-num"><span>￥</span><span class="num">36.5</span></div>
+                                <div class="shop-cart-product-count">
+                                    <a onclick="a('+');">+</a>
+                                    <input id="inputVal" onblur="b(this.value);" onkeyup="this.value=this.value.replace(/\D/gi,'')" value="1" type="text">
+                                    <a onclick="a('-');">-</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="shop-cart-account">
+                    <span class="shop-cart-checkbox">
+                        <input type="checkbox" class="checkbox-input"><span class="check-all">全选</span>
+                    </span>
+                   <div class="money"><span>合计:</span><span class="money-symbol">￥</span><span class="total-money">0.00</span></div>
+                    <span class="total-number">结算<span>(</span><span>0</span><span>)</span></span>
+                </div>
+
+                <nav class="bar bar-tab">
+                    <a class="tab-item external active" href="index.html">
+                        <i class="icon icon-home iconfont icon-shouye"></i>
+                        <span class="tab-label">首页</span>
+                    </a>
+                    <a class="tab-item external" href="shopping_cart.html">
+                        <i class="icon icon-home iconfont icon-gouwuche"></i>
+                        <span class="tab-label">购物车</span>
+                        <span class="badge">2</span>
+                    </a>
+                    <a class="tab-item external" href="my_order.html">
+                        <i class="icon icon-home iconfont icon-icon-"></i>
+                        <span class="tab-label">我的订单</span>
+                    </a>
+                    <a class="tab-item open-panel" href="#" data-panel='#panel-left-demo'>
+                        <i class="icon icon-home iconfont icon-gerenzhongxin"></i>
+                        <span class="tab-label" >我的淘宝</span>
+                    </a>
+                </nav>
+                <a href="#searchbar" class="external back-top"><i class="iconfont icon-fanhuidingbu"></i></a>
+            </div>
+        </div>
+
+        <div class="panel-overlay"></div>
+            <!-- Left Panel with Reveal effect -->
+        <div class="panel panel-left panel-reveal theme-dark" id='panel-left-demo'>
+            <div class="content-block user-info">
+                <div class="user-img"><img class="head-portrait" src="../../img/loading.jpg" alt="图片加载失败"></div>
+                <p><div class="close-icon"><i class="iconfont icon-guanbi close-panel"></i></div></p>
+            </div>
+            <div class="list-block">
+                <div class="user-status"><span>你好，岁忧郁习惯了蓝</span></div>
+                <div class="user-status"><a  class="external user-login" href="login.html">登录</a><a class="external user-register" href="register.html">新用户注册</a></div>
+                <div class="info-list">
+                    <a class="external list-item" href="index.html"><i class="iconfont icon-shouye open-panel"></i>首页</a>
+                    <a class="external list-item" href="address.html"><i class="iconfont icon-dizhi open-panel"></i>收货地址</a>
+                    <a class="external list-item" href="my_order.html"><i class="iconfont icon-icon- open-panel"></i>我的订单</a>
+                    <a class="external list-item" href="shopping_cart.html"><i class="iconfont icon-gouwuche open-panel"></i>购物车</a>
+                    <a class="external list-item" href="#"><i class="iconfont icon-gerenzhongxin open-panel"></i>性别</a>
+                    <a class="external list-item" href="login.html"><i class="iconfont icon-tuichu open-panel"></i>退出登录</a>
+                </div>
+            </div>
+          
+        </div>
+      
+    </div>
+</body>
+<script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+<script src="../../lib/dist/js/swiper.min.js"></script>
+<script src="../../lib/jquery-3.3.1.js"></script>
+<script src="../../lib/dist/js/mescroll.min.js"></script>
+<!--<script src="../../js/public.js"></script>-->
+<script src="../../js/shopping_cart.js"></script>
+</html>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace表示对应的接口类 -->
+<mapper namespace="xyz.cglzwz.dao.StoreBookMapper">
+    <insert id="insertBook" parameterType="book">
+        INSERT INTO tb_book (isbn, title, price, publication_house, publication_date, introduction,
+            type, recommend, `show`, inventory, sale_volume, img_url1, img_url2, img_url3, img_url4, img_url5)
+            VALUES (#{isbn}, #{title}, #{price}, #{publicationHouse}, #{publicationDate}, #{introduction},
+            #{type}, #{recommend}, #{show}, #{inventory}, #{saleVolume}, #{imgUrl1}, #{imgUrl2},
+            #{imgUrl3}, #{imgUrl4}, #{imgUrl5})
+    </insert>
+
+    <!-- 插入书和店的关系记录 -->
+    <insert id="insertStoreBookRelation" parameterType="storeBookRelation">
+        <!-- 获取到的最新修改id添加到storeBookRelation的bookId上 -->
+        <selectKey resultType="integer" keyColumn="pk_id" keyProperty="pkId" order="AFTER">
+            SELECT LAST_INSERT_ID() AS bookId
+        </selectKey>
+        INSERT INTO tb_store_book VALUES (#{storeId}, #{bookId});
+    </insert>
+
+    <update id="updateBook" parameterType="book">
+        UPDATE tb_book SET price = #{price}, introduction = #{introduction}, type = #{type},
+            recommend = #{recommend}, `show` = #{show}, inventory = #{inventory} WHERE pk_id = #{pkId}
+    </update>
+
+    <delete id="deleteStoreBookRelation">
+        DELETE FROM tb_store_book WHERE store_id = #{storeId} AND book_id = #{bookId}
+    </delete>
+
+    <delete id="deleteBook" parameterType="int">
+        DELETE FROM tb_book WHERE pk_id = #{bookId}
+    </delete>
+
+    <select id="selectAllStoreBook" parameterType="int" resultType="book">
+        SELECT * FROM tb_book WHERE pk_id IN
+            (SELECT book_id FROM tb_store_book WHERE store_id = #{storeId})
+    </select>
+
+    <select id="selectBookRecommend" parameterType="int" resultType="book">
+        SELECT * FROM tb_book WHERE recommend = 1 LIMIT #{limit}
+    </select>
+
+    <select id="selectStoreBookShow" parameterType="int" resultType="book">
+        SELECT * FROM tb_book WHERE `show` = 1 AND pk_id IN
+            ((SELECT book_id FROM tb_store_book WHERE store_id = #{storeId}))
+    </select>
+</mapper>

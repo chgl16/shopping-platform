@@ -1,0 +1,109 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 20px;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+li{
+    list-style: none;
+    padding: 0;
+}
+/*列表*/
+.mescroll{
+    height: auto;
+}
+.search-list li{
+    box-sizing: border-box;
+    border-bottom: 1px solid #dbdbdb;
+    padding: .6rem .3rem;
+}
+.recommend-list{
+   display: flex;
+   display: -webkit-flex;
+   flex-wrap: wrap;
+}
+.recommend-list li{
+    width: 33.33%;
+    padding: 0 .2rem;
+    height: 7.5rem;
+ }
+.list-item {
+    display: flex;
+    display: -webkit-flex;
+    height: 5.5rem;
+}
+
+.list-item .p-pic {
+    width: 5rem;
+    height: 5rem;
+}
+
+.list-item .d {
+    padding: .1rem .3rem;
+    flex-grow: 1;
+    height: 100%;
+}
+.d-title{
+    font-size: .8rem;
+    color: #4b566a;
+}
+.search-list .page-container>li .d p {
+    line-height: 24px;
+    color: #999;
+}
+
+.d-price {
+    color: #eb5211;
+    font-size: .8rem;
+    font-family: avenir arial;
+}
+
+.d-main {
+    display: flex;
+    display: -webkit-flex;
+    overflow: hidden;
+    font-size: .6rem;
+    color: #999;
+}
+
+.d-num {
+    flex-grow: 1;
+    text-align: center;
+}
+.d-area {
+    text-align: right;
+}
+.search-store {
+    height: 2.5rem;
+}
+.search-store select {
+    border: none;
+}
+.search-store .search-input{
+    display: flex;
+}
+.search-store .search-input input {
+    border-radius: 0;
+    height: 1.8rem;
+    padding:0.9rem .3rem;
+}
+.back-index{
+    text-align: center;
+    margin-left: .2rem;
+    line-height: 2.5rem;
+}
+.search-icon {
+    background-color: #fff;
+    height: 1.9rem;
+    line-height: 0.4;
+    font-size: 2.4rem;
+}
+.search-icon .icon-sousuo{
+    font-size: 1.2rem;
+}

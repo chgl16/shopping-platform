@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>修改信息</title>
+    <script type="text/javascript" src="../lib/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../lib/jquery-form.js"></script>
+    <script type="text/javascript" src="../testJs/updateUserinfo.update_userinfo.js"></script>
+</head>
+<body>
+    <h2>修改个人信息</h2>
+    <form id="form1" action="/shop/updateUserinfo" enctype="multipart/form-data" method="post">
+        <table>
+            <tr>
+                <td>昵称：</td>
+                <td><input type="text" name="username"/></td>
+            </tr>
+            <tr>
+                <td>收货手机号:</td>
+                <td><input type="text" name="contactPhone"/></td>
+            </tr>
+            <tr>
+                <td>收货地址:</td>
+                <td><input type="text" name="contactAddress"/></td>
+            </tr>
+            <tr>
+                <td>请选择头像:</td>
+                <td><input type="file" name="image" onchange="previewFile()"/></td>
+            </tr>
+            <tr>
+                <img src="" height="100" width="200" alt="这是略缩图..."/>
+            </tr>
+            <tr>
+                <td><input type="submit" name="submit" value="提交"/></td>
+                <td><input type="reset" name="reset" value="重置"/></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

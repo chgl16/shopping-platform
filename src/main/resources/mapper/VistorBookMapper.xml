@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace表示对应的接口类 -->
+<mapper namespace="xyz.cglzwz.dao.VistorBookMapper">
+    <select id="selectAllBook" resultType="book">
+        SELECT * FROM tb_book
+    </select>
+
+    <select id="selectBookByKeyword" parameterType="string" resultType="book">
+        SELECT * FROM tb_book WHERE title LIKE CONCAT('%', CONCAT(#{keyword}, '%'))
+    </select>
+
+    <select id="selectBookByType" parameterType="string" resultType="book">
+        SELECT * FROM tb_book WHERE type = #{type}
+    </select>
+
+    <select id="selectBookByPriceRange" resultType="book">
+        SELECT * FROM tb_book WHERE price BETWEEN  #{from} AND #{end}
+    </select>
+
+    <select id="selectBookOrderByPriceAsc" resultType="book">
+        SELECT * FROM tb_book ORDER BY price ASC
+    </select>
+
+    <select id="selectBookOrderByPriceDesc" resultType="book">
+        SELECT * FROM tb_book ORDER BY price DESC
+    </select>
+
+    <select id="selectStoreBookByKeyword" resultType="book">
+        SELECT * FROM tb_book WHERE title LIKE CONCAT('%', CONCAT(#{keyword}, '%'))
+            AND pk_id IN (SELECT book_id FROM tb_store_book WHERE store_id = #{storeId})
+    </select>
+
+    <select id="selectAllStoreBook" parameterType="int" resultType="book">
+        SELECT * FROM tb_book WHERE pk_id IN
+            (SELECT book_id FROM tb_store_book WHERE store_id = #{storeId})
+    </select>
+
+    <select id="selectAllStore" resultType="store">
+        SELECT * FROM tb_store
+    </select>
+</mapper>

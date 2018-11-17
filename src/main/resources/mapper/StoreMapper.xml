@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace表示对应的接口类 -->
+<mapper namespace="xyz.cglzwz.dao.StoreMapper">
+
+    <resultMap id="storeResultMap" type="store">
+        <id column="pk_id" property="pkId"/>
+        <result column="uk_name" property="name"/>
+        <result column="founding_time" property="foundingTime"/>
+        <result column="introduction" property="introduction"/>
+        <result column="address" property="address"/>
+        <result column="img_url" property="imgUrl"/>
+    </resultMap>
+
+    <insert id="insertStore" parameterType="store">
+        INSERT INTO tb_store (uk_name, founding_time, introduction)
+            VALUES (#{name}, #{foundingTime}, #{introduction})
+    </insert>
+
+    <select id="selectPkIdByuKName" resultType="integer" parameterType="string">
+        SELECT pk_id FROM tb_store WHERE uk_name = #{name}
+    </select>
+
+    <update id="updateStore" parameterType="store">
+        UPDATE tb_store SET uk_name = #{name}, introduction = #{introduction}, address = #{address}, img_url = #{imgUrl}
+            WHERE pk_id = #{pkId}
+    </update>
+
+    <!-- 通过店主id获取店铺信息 -->
+    <select id="selectStore" parameterType="int" resultMap="storeResultMap">
+        SELECT * FROM tb_store WHERE
+            pk_id IN (SELECT store_id FROM tb_store_owner WHERE owner_id = #{ownerId})
+    </select>
+
+</mapper>

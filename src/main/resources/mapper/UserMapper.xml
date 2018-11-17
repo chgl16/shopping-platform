@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace表示对应的接口类 -->
+<mapper namespace="xyz.cglzwz.dao.UserMapper">
+    <!-- 返回类型差异解决方法：1.可以使用结果集 2.别名pk_id As id 3.自动的驼峰映射 -->
+    <resultMap id="userMap" type="user">
+        <id column="pk_id" property="id"/>
+        <result column="uk_phone" property="phone"/>
+        <result column="shadow" property="shadow"/>
+        <result column="role_type" property="roleType"/>
+    </resultMap>
+
+    <!-- 视图无法自动驼峰映射,resultMap结果集可以不写全，不写全的自动驼峰映射 -->
+    <resultMap id="userViewMap" type="userView">
+        <result column="id" property="id"/>
+        <result column="phone" property="phone"/>
+        <result column="role_type" property="roleType"/>
+        <result column="username" property="username"/>
+        <result column="img_url" property="imgUrl"/>
+    </resultMap>
+
+    <select id="findUserByPhone" parameterType="string" resultType="integer">
+        SELECT pk_id FROM tb_user WHERE uk_phone = #{phone}
+    </select>
+
+    <insert id="insertUser" parameterType="user">
+        INSERT INTO tb_user(uk_phone, shadow, role_type) VALUES(#{phone}, Md5(#{password}), #{roleType})
+    </insert>
+
+    <insert id="insertUserinfo" parameterType="user">
+        INSERT INTO tb_userinfo(username, contact_phone) VALUES(
+            <if test="roleType == 1">
+                '顾客还没名字',
+            </if>
+            <if test="roleType == 2">
+                '店主还没名字',
+            </if>
+            #{phone})
+    </insert>
+
+    <select id="findUserByPhoneAndPassword" resultType="integer">
+        SELECT pk_id FROM tb_user WHERE uk_phone = #{phone} AND shadow = MD5(#{password})
+    </select>
+
+    <select id="selectUserViewByPhone" parameterType="string" resultMap="userViewMap">
+        SELECT * FROM v_user WHERE phone = #{phone}
+    </select>
+
+    <update id="updateUserinfoById" parameterType="userinfo">
+        UPDATE tb_userinfo
+        <set>
+            <if test="username != null and username!= ''">
+                username = #{username},
+            </if>
+            <if test="contactPhone != null and contactPhone != ''">
+                contact_phone = #{contactPhone}
+            </if>
+            <if test="contactAddress != null and contactAddress != ''">
+                contact_address = #{contactAddress}
+            </if>
+            <if test="imgUrl != null and imgUrl != ''">
+                img_url = #{imgUrl}
+            </if>
+        </set>
+        WHERE pk_id = #{id}
+    </update>
+
+</mapper>

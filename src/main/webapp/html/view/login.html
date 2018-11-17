@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../../font/iconfont.css">
+    <link rel="stylesheet" href="../../css/login.css">
+    <title>用户登录</title>
+</head>
+<body style="  background-image: url(../../img/1.jpg);">
+   
+    <div class="register">
+        <div class="register-title">登录</div>
+        <div class="check-tip"></div>
+        <div class="register-input">
+            <div class="register-icon"><i class="iconfont icon-shoujihaoma"></i></div>
+            <input maxlength="11" id="phone" type="text" autocomplete="off"  placeholder="请输入手机号码">
+        </div>
+        <div class="check-tip" id="check-phone"></div>
+        <div class="register-input">
+            <div class="register-icon"><i class="iconfont icon-mima"></i></div>
+            <input type="password" id="password" maxlength="16" minlength="6"  placeholder="6-16位数字和字母的组合">
+        </div>
+        <div class="check-tip" id="check-password"></div>
+      
+        <div class="register-input">
+            <div class="register-icon"><i class="iconfont icon-yanzhengma1"></i></div>
+            <input type="text" id="icode" placeholder="请输入正确的验证码" value="验证码" onfocus="this.value=''" onblur="if(this.value=='')this.value='验证码'"/>
+            <div class="code" id="code" title="看不清，换一张" onclick="changeImg()"></div> 
+        </div>
+        <div class="check-tip" id="check-code"></div>
+        <div class="register-input">
+            <input type="button" id="login-btn" value="登录">
+        </div>
+        <div class="href-tip">
+            <a href="register.html">点我注册</a>
+        </div>
+    </div>
+
+</body>
+<script src="../../lib/jquery-3.3.1.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="../../js/login.js"></script>
+</html>
