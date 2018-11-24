@@ -32,7 +32,7 @@ public class Userinfo {
         return id;
     }
 
-    public void setId(int pkId) {
+    public void setId(int id) {
         this.id = id;
     }
 

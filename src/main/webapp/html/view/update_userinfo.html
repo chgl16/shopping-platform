@@ -9,19 +9,24 @@
 </head>
 <body>
     <h2>修改个人信息</h2>
-    <form id="form1" action="/shop/updateUserinfo" enctype="multipart/form-data" method="post">
+    <form id="form1" action="/updateUserinfo" enctype="multipart/form-data" method="post">
         <table>
             <tr>
+                <td>
+                    <input type="hidden" id="userId" name="id"/>
+                </td>
+            </tr>
+            <tr>
                 <td>昵称：</td>
-                <td><input type="text" name="username"/></td>
+                <td><input type="text" id="username" name="username"/></td>
             </tr>
             <tr>
                 <td>收货手机号:</td>
-                <td><input type="text" name="contactPhone"/></td>
+                <td><input type="text" id="contactPhone" name="contactPhone"/></td>
             </tr>
             <tr>
                 <td>收货地址:</td>
-                <td><input type="text" name="contactAddress"/></td>
+                <td><input type="text" id="contactAddress" name="contactAddress"/></td>
             </tr>
             <tr>
                 <td>请选择头像:</td>

@@ -1,0 +1,141 @@
+*{
+	padding:0px;
+	margin:0px;
+	font-family: "Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3",FontAwesome,sans-serif;
+}
+html,body{
+	
+	font-size:20px;
+}
+.show{
+	display:block;
+}
+.hidden{
+	display:none;
+}
+.red{
+	color:#f8675e !important;
+}
+.blue{
+	color:#095f8a;
+}
+.grey{
+	color:#aeb2b7;
+}
+.up{
+	transform: rotate(180deg);
+}
+.down{
+	transform: rotate(0deg);
+}
+.hight{
+
+}
+#book_form{
+	width:100%;
+    box-sizing: border-box;
+	padding:2rem;
+}
+.input_box{
+	position:relative;
+	display: inline-block;
+	width:14.7rem;
+	height:2rem;
+	margin-top:1rem;
+	font-size:0.7rem;
+}
+.input_box>span{
+	display:inline-block;
+	width:3rem;
+	
+}
+.input_box>input{
+	display:inline-block;
+	width:10rem;
+	height:1.5rem;
+	border-radius:  0.1rem;
+	border: 1px solid #dcdcdc;
+}
+.form_tips{
+	position:absolute;
+	top:1.5rem;
+	left:3rem;
+	font-size: 0.6rem;
+	color:red;
+}
+.text_box{
+	width:26rem;
+	height:3rem;
+}
+.input_box>textarea{
+	vertical-align: top;
+	width:22rem;
+	height:3rem;
+	border-radius: 0.1rem;
+	resize: none;
+	border: 1px solid #dcdcdc;
+}
+.img_input_con{
+
+	margin-top:1.5rem;
+}
+.img_box{
+	position: relative;
+	display: inline-block;
+	width:7rem;
+	height:5rem;
+	margin-right:1.76rem;
+	border:1px solid  #dcdcdc;
+	border-radius: 0.2rem;
+}
+.img_tip{
+	position:absolute;
+	top:5rem;
+	left:0px;
+	font-size:0.6rem;
+	color:red;
+}
+.img_text>span{
+	position: absolute;
+	z-index: 1;
+	display: block;
+	width:100%;
+	font-size:0.6rem;
+	text-align: center;
+	color:#ccc;
+}
+.img_text span:first-child{
+	top:0.95rem;
+	font-size:2rem;
+	
+}
+.img_text span:nth-child(2){
+	top:3rem;
+}
+.img_box>input{
+	position: absolute;
+	z-index:4;
+	width:100%;
+	height:100%;
+	opacity: 0;
+}
+.img_box>img{
+	width:100%;
+	height:100%;
+	z-index:3;
+}
+.form_btn{
+	width:7rem;
+	height:2rem;
+	margin-top:1.5rem;
+	font-size:0.7rem;
+	line-height: 2rem;
+	color:#fff;
+	text-align: center;
+	border-radius: 0.15rem;
+	background:#57c8f2;
+	cursor: pointer;
+}
+.form_btn:hover{
+	background:#00baff;;
+}

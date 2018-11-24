@@ -13,7 +13,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 @Component
 public class Store {
-    private int pkId;
+    private int id;
     private String name;
     private String foundingTime;
     private String address;
@@ -61,12 +61,12 @@ public class Store {
         this.imgUrl = imgUrl;
     }
 
-    public int getPkId() {
-        return pkId;
+    public int getId() {
+        return id;
     }
 
-    public void setPkId(int pkId) {
-        this.pkId = pkId;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public MultipartFile getImage() {
@@ -79,7 +79,7 @@ public class Store {
 
     @Override
     public String toString() {
-        return "store: [pkId: " + pkId + ", name" + name + ", foundingTime: " + foundingTime + ", address: "
+        return "store: [id: " + id + ", name" + name + ", foundingTime: " + foundingTime + ", address: "
                 + address + ", introduction: " + introduction + ", imgUrl: " + imgUrl + "]";
     }
 }

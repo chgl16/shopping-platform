@@ -1,6 +1,7 @@
 package xyz.cglzwz.domain;
 
 import org.springframework.stereotype.Component;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.sql.Date;
 
@@ -14,9 +15,10 @@ import java.sql.Date;
 
 @Component
 public class Book {
-    private int pkId;
+    private int id;
     private String isbn;
     private String title;
+    private String type;
     private double price;
     private String publicationHouse;
     private String publicationDate;
@@ -46,12 +48,99 @@ public class Book {
     private String imgUrl4;
     private String imgUrl5;
 
-    public int getPkId() {
-        return pkId;
+    private MultipartFile image1;
+    private MultipartFile image2;
+    private MultipartFile image3;
+
+    public String getImgUrl1() {
+        return imgUrl1;
     }
 
-    public void setPkId(int pkId) {
-        this.pkId = pkId;
+    public void setImgUrl1(String imgUrl1) {
+        this.imgUrl1 = imgUrl1;
+    }
+
+    public String getImgUrl2() {
+        return imgUrl2;
+    }
+
+    public void setImgUrl2(String imgUrl2) {
+        this.imgUrl2 = imgUrl2;
+    }
+
+    public String getImgUrl3() {
+        return imgUrl3;
+    }
+
+    public void setImgUrl3(String imgUrl3) {
+        this.imgUrl3 = imgUrl3;
+    }
+
+    public String getImgUrl4() {
+        return imgUrl4;
+    }
+
+    public void setImgUrl4(String imgUrl4) {
+        this.imgUrl4 = imgUrl4;
+    }
+
+    public String getImgUrl5() {
+        return imgUrl5;
+    }
+
+    public void setImgUrl5(String imgUrl5) {
+        this.imgUrl5 = imgUrl5;
+    }
+
+    public MultipartFile getImage1() {
+        return image1;
+    }
+
+    public void setImage1(MultipartFile image1) {
+        this.image1 = image1;
+    }
+
+    public MultipartFile getImage2() {
+        return image2;
+    }
+
+    public void setImage2(MultipartFile image2) {
+        this.image2 = image2;
+    }
+
+    public MultipartFile getImage3() {
+        return image3;
+    }
+
+    public void setImage3(MultipartFile image3) {
+        this.image3 = image3;
+    }
+
+    public MultipartFile getImage4() {
+        return image4;
+    }
+
+    public void setImage4(MultipartFile image4) {
+        this.image4 = image4;
+    }
+
+    public MultipartFile getImage5() {
+        return image5;
+    }
+
+    public void setImage5(MultipartFile image5) {
+        this.image5 = image5;
+    }
+
+    private MultipartFile image4;
+    private MultipartFile image5;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getIsbn() {
@@ -68,6 +157,14 @@ public class Book {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public double getPrice() {
@@ -137,8 +234,8 @@ public class Book {
 
     @Override
     public String toString() {
-        return "book: [pkId: " + pkId + ", isbn: " + isbn + ", title: " + title + ", introduction: "
-                + introduction + ", price: " + price + ", recommend: " + recommend + ", show: "
-                + show + ", inventory: " + inventory + ", saleVolume: " + saleVolume + "]";
+        return "book: [id: " + id + ", isbn: " + isbn + ", title: " + title + ", type: " + type
+                + ", introduction: " + introduction + ", price: " + price + ", recommend: " + recommend
+                + ", show: " + show + ", inventory: " + inventory + ", saleVolume: " + saleVolume + "]";
     }
 }

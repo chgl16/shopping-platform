@@ -14,7 +14,7 @@ import java.util.List;
 
 public interface ProviderService {
     /**
-     * 获取所以店铺申请
+     * 获取所有店铺申请
      *
      * @return List<ApplyStore>
      */
@@ -29,14 +29,14 @@ public interface ProviderService {
     /**
      * 通过这个店铺申请
      *
-     * @param pkId
+     * @param id
      */
-    public void acceptApplication(int pkId);
+    public void acceptApplication(int id);
 
     /**
      * 拒绝这个店铺申请
      *
-     * @param pkId
+     * @param id
      */
-    public void refuseApplication(int pkId);
+    public void refuseApplication(int id);
 }

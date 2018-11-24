@@ -5,7 +5,7 @@
 <mapper namespace="xyz.cglzwz.dao.ApplyStoreMapper">
 
     <resultMap id="applyStoreResultMap" type="applyStore">
-        <id column="pk_id" property="pkId"/>
+        <id column="pk_id" property="id"/>
         <result column="owner_id" property="ownerId"/>
         <result column="store_name" property="storeName"/>
         <result column="store_introduction" property="storeIntroduction"/>
@@ -27,14 +27,14 @@
     </select>
 
     <update id="updateStatusToAccept" parameterType="int">
-        UPDATE tb_apply_store SET status = 1 WHERE pk_id = #{pkId}
+        UPDATE tb_apply_store SET status = 1 WHERE pk_id = #{id}
     </update>
 
     <update id="updateStatusToRefuse" parameterType="int">
-        UPDATE tb_apply_store SET status = 0 WHERE pk_id = #{pkId}
+        UPDATE tb_apply_store SET status = 0 WHERE pk_id = #{id}
     </update>
 
     <select id="selectOneByPkId" parameterType="int" resultMap="applyStoreResultMap">
-        SELECT * FROM tb_apply_store WHERE pk_id = #{pkId}
+        SELECT * FROM tb_apply_store WHERE pk_id = #{id}
     </select>
 </mapper>

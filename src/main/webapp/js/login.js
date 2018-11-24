@@ -43,9 +43,11 @@ function loginAjax(){
                 // 保存数据
                 localStorage.setItem('userId', data.id);
                 localStorage.setItem('phone', data.phone);
-                localStorage.setItem('roleType', data.roleType);
                 localStorage.setItem('username', data.username);
+                localStorage.setItem('roleType', data.roleType);
                 localStorage.setItem('userImgUrl', data.imgUrl);
+                localStorage.setItem('userContactPhone', data.contactPhone);
+                localStorage.setItem('userContactAddress', data.contactAddress);
                 window.location.href = "index.html";
             }
         },

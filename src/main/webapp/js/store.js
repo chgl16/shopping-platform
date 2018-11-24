@@ -3,3 +3,11 @@ var swiper = new Swiper('.swiper-container', {
       el: '.swiper-pagination',
     },
   });
+
+/**
+ * @author chgl16
+ * @param ev
+ */
+window.onload = function (ev) {
+
+}

@@ -18,7 +18,7 @@ CREATE TABLE `tb_userinfo` (
 	`username` VARCHAR(20) COMMENT '昵称',
 	`contact_phone` VARCHAR(11) COMMENT '收货地址',
 	`contact_address` VARCHAR(100) COMMENT '收货地址',
-	`img_url` VARCHAR(100) COMMENT '头像地址',
+	`img_url` VARCHAR(100) DEFAULT '../../picture/user/default.jpg' COMMENT '头像地址',
 	PRIMARY KEY(`pk_id`),
 	FOREIGN KEY(`pk_id`) REFERENCES `tb_user`(`pk_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -37,11 +37,11 @@ CREATE TABLE `tb_book` (
 	`show` TINYINT UNSIGNED DEFAULT 0 COMMENT '是否轮播显示',
 	`inventory` INT UNSIGNED COMMENT '库存量',
 	`sale_volume` INT UNSIGNED DEFAULT 0 COMMENT '销量',
-	`img_url1` VARCHAR(100) COMMENT '图片1',
-	`img_url2` VARCHAR(100) COMMENT '图片2',
-	`img_url3` VARCHAR(100) COMMENT '图片3',
-	`img_url4` VARCHAR(100) COMMENT '图片4',
-	`img_url5` VARCHAR(100) COMMENT '图片5',
+	`img_url1` VARCHAR(100) DEFAULT '../../picture/book/default.jpg' COMMENT '图片1',
+	`img_url2` VARCHAR(100) DEFAULT '../../picture/book/default.jpg' COMMENT '图片2',
+	`img_url3` VARCHAR(100) DEFAULT '../../picture/book/default.jpg' COMMENT '图片3',
+	`img_url4` VARCHAR(100) DEFAULT '../../picture/book/default.jpg' COMMENT '图片4',
+	`img_url5` VARCHAR(100) DEFAULT '../../picture/book/default.jpg' COMMENT '图片5',
 	PRIMARY KEY(`pk_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -52,7 +52,7 @@ CREATE TABLE `tb_store` (
 	`founding_time` DATETIME COMMENT '创办时间',
 	`introduction` VARCHAR(100) COMMENT '店铺介绍',
 	`address` VARCHAR(100) COMMENT '店铺地址',
-	`img_url` VARCHAR(100) COMMENT '店铺头像',
+	`img_url` VARCHAR(100) DEFAULT '../../picture/store/default.jpg' COMMENT '店铺头像',
 	PRIMARY KEY(`pk_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -125,7 +125,8 @@ CREATE TABLE `tb_apply_store` (
 
 /* 创建视图 */
 CREATE VIEW v_user AS
-	SELECT tb_user.pk_id AS id, tb_user.uk_phone AS phone, tb_user.role_type, tb_userinfo.username, tb_userinfo.img_url
+	SELECT tb_user.pk_id AS id, tb_user.uk_phone AS phone, tb_user.role_type,
+	tb_userinfo.username, tb_userinfo.img_url, tb_userinfo.contact_phone, tb_userinfo.contact_address
 	FROM tb_user, tb_userinfo
 	WHERE tb_user.pk_id = tb_userinfo.pk_id;
 

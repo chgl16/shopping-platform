@@ -3,7 +3,7 @@ var passwordInput = document.getElementById('password');//密码input框
 var passwordAginInput = document.getElementById('password-agin');//再次确认密码输入框
 var icode = document.getElementById('icode');//验证码输入框
 var registerBtn = document.getElementById('register-btn');//注册按钮
-
+var roleType = 1;
 
 //正则对象
 var regs = {
@@ -26,7 +26,7 @@ function registerAjax(){
 
     phone = $("#phone").val();
     password = $("#password").val();
-    roleType = $("input[name='roleType'][checked]").val();
+    roleType = $("input[type='radio']:checked").val();
 
     console.log("phone: " + phone + ", password: " + password + ", roleType: " + roleType);
     $.post({

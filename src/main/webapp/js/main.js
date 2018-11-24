@@ -1,5 +1,8 @@
 $(function () {
 
+   // 填充收货地址
+   $(".form-control")[0].innerHTML = localStorage.getItem("userContactAddress");
+
   'use strict';
 
   var $distpicker = $('#distpicker');

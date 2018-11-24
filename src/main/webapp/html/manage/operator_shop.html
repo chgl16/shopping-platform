@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>所有商家</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="../../css/backPublic.css">
+	<link rel="stylesheet" type="text/css" href="../../css/operator_shop.css">
+</head>
+<body>
+	<div class="container">
+		<div class="left_box">
+			<div class="top_title">
+				<svg class="tree_icon" aria-hidden="true">
+	  				<use xlink:href="#icon-shu"></use>
+				</svg>
+				<span>BOOK_MALL</span>
+			</div>
+			<ul class="left_page">
+				<li>
+					<span class="left_page_item">
+						<svg class="li_icon" aria-hidden="true">
+	  						<use xlink:href="#icon-shangpin"></use>
+						</svg>
+						顾客管理
+						<svg class="sanjiao_icon down" aria-hidden="true">
+	  						<use xlink:href="#icon-sanjiaoxinggengduo"></use>
+						</svg>
+					</span>
+					<ul class="sub_ul hidden">
+						<li><a href="operator_back.html">所有顾客</a></li>
+						<li><a href="operator_customerBlack.html">顾客黑名单</a></li>
+					</ul>
+				</li>
+				<li>
+					<span class="left_page_item">
+						<svg class="li_icon" aria-hidden="true">
+	  						<use xlink:href="#icon-shangjia"></use>
+						</svg>
+						商家管理
+						<svg class="sanjiao_icon up" aria-hidden="true">
+	  						<use xlink:href="#icon-sanjiaoxinggengduo"></use>
+						</svg>
+					</span>
+					<ul class="sub_ul show">
+						<li><a href="operator_shop.html" class="red">所有商家</a></li>
+						<li><a href="#">商家黑名单</a></li>
+						<li><a href="operator_shopApply.html">店铺上线</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="right_box">
+			<div class="page_path">
+				<svg class="path_icon" aria-hidden="true">
+	  				<use xlink:href="#icon-lubiao"></use>
+				</svg>
+				当前位置：商家管理 > 所有商家
+			</div>
+			<div class="top_text">共有<span class="count">22</span>条记录</div>
+			<div class="batch_box">
+				<input type="checkbox" class="all_check_it">全选
+				<span class="all_lahei_btn">批量拉黑</span>
+			</div>
+			<table class="shop_table">
+				<thead>
+					<tr>
+						<th>选择</th>
+						<th>头像</th>
+						<th>ID</th>
+						<th>商家店铺名</th>
+						<th>销量</th>
+						<th>商品</th>
+						<th>订单记录</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody class="shop_boby">
+					<tr class="shop_item">
+						<td><input type="checkbox" class="check_it"></td>
+						<td><img src="../../img/manage/1.jpg"></td>
+						<td>AD$56567869879</td>
+						<td>1小鱼儿专卖店</td>
+						<td>50007</td>
+						<td><a href="operator_consumeRecord.html" class="look_btn">查看</a></td>
+						<td><a href="operator_consumeRecord.html" class="look_btn">查看</a></td>
+						<td><span class="lahei_btn">拉黑</span></td>
+					</tr>
+				</tbody>
+				
+			</table>
+			<div class="paging_btn">
+				<span class="pre_page">上一页</span>
+				<span class="next_page">下一页</span>
+				<span class="count_page">共4页</span>
+				<span>到第<input type="text" class="paging_inp">页</span>
+				<span class="sure_btn">确定</span>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="mask hidden"></div>
+	<div class="pop_up hidden">
+	</div>
+	<div class="tips_pop hidden">
+	</div>
+</body>
+
+<script src="../../lib/layDate-v5.0.9/laydate/laydate.js"></script>
+<script src="../../js/iconfont.js"></script>
+<script src="../../js/backPublic.js"></script>
+<script src="../../js/operator_shop.js"></script>
+</html>

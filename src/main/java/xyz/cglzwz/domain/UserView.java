@@ -17,6 +17,24 @@ public class UserView {
     private String username;
     private byte roleType;
     private String imgUrl;
+    private String contactPhone;
+    private String contactAddress;
+
+    public String getContactPhone() {
+        return contactPhone;
+    }
+
+    public void setContactPhone(String contactPhone) {
+        this.contactPhone = contactPhone;
+    }
+
+    public String getContactAddress() {
+        return contactAddress;
+    }
+
+    public void setContactAddress(String contactAddress) {
+        this.contactAddress = contactAddress;
+    }
 
     public int getId() {
         return id;
@@ -61,6 +79,7 @@ public class UserView {
     @Override
     public String toString() {
         return "userView: [id: " + id + ", phone: " + phone + ", username: " + username + ", roleType: "
-                + roleType + ", imgUrl: " + imgUrl + "]";
+                + roleType + ", imgUrl: " + imgUrl + ", contactPhone: " + contactPhone + ", contactAddress: "
+                + contactAddress + "]";
     }
 }

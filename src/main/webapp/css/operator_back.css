@@ -1,0 +1,82 @@
+.top_text{
+	width:96%;
+	/*box-sizing: border-box;*/
+	margin:0rem auto;
+	margin-top:1rem;
+	font-size: 0.7rem;
+	color:#000;
+	font-weight:600;
+	border-bottom: 0.1rem solid rgb(92,152,210);
+}
+.batch_box{
+	width:96%;
+	box-sizing: border-box;
+	/*padding-left:0.6rem;*/
+	margin:0rem auto;
+	margin-top:0.5rem;
+	font-size: 0.7rem;
+}
+.all_lahei_btn{
+	display: inline-block;
+	width:4.4rem;
+	height:1.4rem;
+	margin-left:0.3rem;
+	color:#fff;
+	line-height: 1.4rem;
+	text-align: center;
+	background:#095f8a;
+	border-radius: 0.15rem;
+	cursor: pointer;
+}
+.all_send_btn:hover{
+	background: #339cd1;
+}
+.shop_table{
+	width:96%;
+	margin:0px auto;
+	font-size:0.7rem;
+	text-align: center;
+	border-collapse: collapse;
+}
+.shop_table>thead>tr{
+	height:1.3rem;
+	background: #f6fafd;
+}
+.shop_table>tbody>tr{
+	height:3rem;
+	background: #fff;
+	border-bottom: 0.05rem solid rgb(224,224,224);
+}
+.shop_table>tbody>tr td:first-child{
+	text-align: left;
+}
+.shop_table>thead>tr th:first-child{
+	text-align: left;
+}
+.shop_table>tbody>tr:hover{
+	background: #eee;
+}
+
+/*.shop_table>tbody td{
+	border:0px;
+}*/
+.shop_table>tbody img{
+	width:2rem;
+	height:2rem;
+	border-radius: 50%;
+
+} 
+.shop_table>tbody td>span,.shop_table>tbody td>a{
+	display: inline-block;
+	width:2.8rem;
+	height:1.3rem;	
+	line-height: 1.3rem;
+	color:#fff;
+	border-radius: 0.15rem;
+	background:#57c8f2;
+	text-decoration: none;
+	cursor: pointer;
+}
+.shop_table>tbody td>span:hover,.shop_table>tbody td>a:hover{
+	background:#00baff;
+}

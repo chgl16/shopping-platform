@@ -12,7 +12,22 @@
        http://www.springframework.org/schema/mvc
        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-    <mvc:annotation-driven/>
+    <!-- 添加注解驱动 -->
+    <mvc:annotation-driven>
+        <!-- @ResponseBody不返回空值NULL -->
+        <mvc:message-converters register-defaults="true">
+            <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+                <property name="objectMapper">
+                    <bean class="com.fasterxml.jackson.databind.ObjectMapper">
+                        <property name="serializationInclusion">
+                            <value type="com.fasterxml.jackson.annotation.JsonInclude.Include">NON_NULL</value>
+                        </property>
+                    </bean>
+                </property>
+            </bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+
     <context:annotation-config/>    <!-- 这两个可以去掉 -->
     <!-- 包扫描，将注解的类注入 -->
     <context:component-scan base-package="xyz.cglzwz.controller"/>
@@ -20,6 +35,14 @@
     <!-- 过滤不拦截的某些资源请求文件 -->
     <mvc:default-servlet-handler />
     <!-- 上传文件 -->
+    <!-- 这个麻烦，得在web.xml里配置绝对路径
     <bean id="multipartResolver" class="org.springframework.web.multipart.support.StandardServletMultipartResolver"/>
+    -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="defaultEncoding" value="utf-8"></property>
+        <property name="maxUploadSize" value="10485760000"></property>
+        <property name="maxInMemorySize" value="40960"></property>
+        <property name="resolveLazily" value="true"/>
+    </bean>
 
 </beans>

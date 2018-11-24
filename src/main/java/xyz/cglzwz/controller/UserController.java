@@ -15,6 +15,7 @@ import xyz.cglzwz.service.UserService;
 import xyz.cglzwz.util.FileUtil;
 import xyz.cglzwz.util.JSONUtil;
 
+import javax.servlet.http.HttpServletRequest;
 import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
@@ -33,6 +34,8 @@ public class UserController {
     private static final Logger log =  Logger.getLogger(UserController.class);
     @Autowired
     private UserService userService;
+    @Autowired
+    private HttpServletRequest request;
 
     /**
      * 注册
@@ -93,11 +96,12 @@ public class UserController {
     @RequestMapping(value = "/updateUserinfo", method = RequestMethod.POST)
     @ResponseBody
     public String updateUserinfo(Userinfo userinfo) throws IOException {
+        String contextPath = request.getSession().getServletContext().getRealPath("/");
         log.info("进入修改信息控制器");
+        log.info("获取到的数据" + userinfo);
         MultipartFile file  = userinfo.getImage();
-        String imgUrl = "/home/lin/" + userinfo.getContactPhone() + ".png";
-        FileUtil.saveFile(file, imgUrl);
-
-        return "";
+        userinfo.setImgUrl(FileUtil.saveFile(file, contextPath, userinfo.getId(), "user"));
+        userService.updateUserInfo(userinfo);
+        return "success";
     }
 }

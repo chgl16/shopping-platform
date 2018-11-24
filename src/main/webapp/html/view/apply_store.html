@@ -1,0 +1,39 @@
+<!-- chgl16添加,我的店铺功能模块 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>申请店铺</title>
+</head>
+<body>
+    <h3>申请店铺</h3>
+    <form id="form1" action="/applyStore" enctype="multipart/form-data" method="post">
+        <table>
+            <tr>
+                <td>
+                    <!-- 隐藏发送（申请者）的id -->
+                    <input type="hidden" id="ownerId" name="ownerId"/>
+                </td>
+            </tr>
+            <tr>
+                <td>店铺名称：</td>
+                <td><input type="text" name="storeName"/></td>
+            </tr>
+            <tr>
+                <td>店铺介绍:</td>
+                <td><input type="text" name="storeIntroduction"/></td>
+            </tr>
+            <tr>
+                <td><input type="submit" name="submit" value="提交"/></td>
+                <td><input type="reset" name="reset" value="重置"/></td>
+            </tr>
+        </table>
+    </form>
+    <a href="index.html">返回首页</a>
+</body>
+<script src="../../lib/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="../../lib/jquery-form.js"></script>
+<script src="../../js/apply_store.js"></script>
+</html>

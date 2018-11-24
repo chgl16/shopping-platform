@@ -3,6 +3,11 @@
 
 <!-- namespace表示对应的接口类 -->
 <mapper namespace="xyz.cglzwz.dao.StoreBookMapper">
+    <resultMap id="bookResultMap" type="book">
+        <id property="id" column="pk_id"/>
+        <!-- 省略可以自动、驼峰映射的字段 -->
+    </resultMap>
+
     <insert id="insertBook" parameterType="book">
         INSERT INTO tb_book (isbn, title, price, publication_house, publication_date, introduction,
             type, recommend, `show`, inventory, sale_volume, img_url1, img_url2, img_url3, img_url4, img_url5)
@@ -14,7 +19,7 @@
     <!-- 插入书和店的关系记录 -->
     <insert id="insertStoreBookRelation" parameterType="storeBookRelation">
         <!-- 获取到的最新修改id添加到storeBookRelation的bookId上 -->
-        <selectKey resultType="integer" keyColumn="pk_id" keyProperty="pkId" order="AFTER">
+        <selectKey resultType="integer" keyColumn="pk_id" keyProperty="id" order="AFTER">
             SELECT LAST_INSERT_ID() AS bookId
         </selectKey>
         INSERT INTO tb_store_book VALUES (#{storeId}, #{bookId});
@@ -22,7 +27,7 @@
 
     <update id="updateBook" parameterType="book">
         UPDATE tb_book SET price = #{price}, introduction = #{introduction}, type = #{type},
-            recommend = #{recommend}, `show` = #{show}, inventory = #{inventory} WHERE pk_id = #{pkId}
+            recommend = #{recommend}, `show` = #{show}, inventory = #{inventory} WHERE pk_id = #{id}
     </update>
 
     <delete id="deleteStoreBookRelation">
@@ -33,16 +38,16 @@
         DELETE FROM tb_book WHERE pk_id = #{bookId}
     </delete>
 
-    <select id="selectAllStoreBook" parameterType="int" resultType="book">
+    <select id="selectAllStoreBook" parameterType="int" resultMap="bookResultMap">
         SELECT * FROM tb_book WHERE pk_id IN
             (SELECT book_id FROM tb_store_book WHERE store_id = #{storeId})
     </select>
 
-    <select id="selectBookRecommend" parameterType="int" resultType="book">
+    <select id="selectBookRecommend" parameterType="int" resultMap="bookResultMap">
         SELECT * FROM tb_book WHERE recommend = 1 LIMIT #{limit}
     </select>
 
-    <select id="selectStoreBookShow" parameterType="int" resultType="book">
+    <select id="selectStoreBookShow" parameterType="int" resultMap="bookResultMap">
         SELECT * FROM tb_book WHERE `show` = 1 AND pk_id IN
             ((SELECT book_id FROM tb_store_book WHERE store_id = #{storeId}))
     </select>

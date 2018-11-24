@@ -6,121 +6,61 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7a22080-ee7b-4c55-a34f-f7492243a231" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/domain/UserView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/TransactionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/util/JSONUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/view/update_userinfo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/icon/icon.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/testJs/update_userinfo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/json/TestTransform.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/normal/TestToString.java" afterDir="false" />
+    <list default="true" id="36b3af24-3d35-4363-8c73-3835fdcc1945" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/controller/ProviderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/controller/StoreController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/manage/operator_shopApply.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/view/apply_store.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/view/my_store.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/apply_store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/my_store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/operator_shopApply.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/shop_back_data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/picture/book/default.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/picture/user/default.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/file/TestFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/normal/TestNull.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/97c89b60-51d4-45d8-93b5-90f3cc270bac.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/classes/jdbc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/classes/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/classes/mybatis/sqlMapConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/classes/redis.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/classes/spring/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/classes/springmvc/dispatcher-servlet.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/classes/sql/db_shopping_platform.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/classes/xyz/cglzwz/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/classes/xyz/cglzwz/dao/UserMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/classes/xyz/cglzwz/domain/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/classes/xyz/cglzwz/domain/Userinfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/classes/xyz/cglzwz/mapper/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/classes/xyz/cglzwz/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/classes/xyz/cglzwz/service/impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/lib/commons-pool2-2.4.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/lib/jedis-2.9.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/lib/log4j-1.2.17.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/lib/mybatis-3.4.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/lib/mybatis-spring-1.3.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/lib/mysql-connector-java-8.0.13.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/lib/protobuf-java-3.6.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/lib/slf4j-api-1.7.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/lib/spring-aop-5.1.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/lib/spring-beans-5.1.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/lib/spring-context-5.1.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/lib/spring-context-support-5.1.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/lib/spring-core-5.1.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/lib/spring-data-commons-2.1.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/lib/spring-data-keyvalue-2.1.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/lib/spring-data-redis-2.1.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/lib/spring-expression-5.1.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/lib/spring-jcl-5.1.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/lib/spring-jdbc-5.1.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/lib/spring-oxm-5.1.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/lib/spring-tx-5.1.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/lib/spring-web-5.1.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/lib/spring-webmvc-5.1.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shopping_platform_war_exploded/index.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/dao/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/dao/ApplyStoreMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/dao/ApplyStoreMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/domain/ApplyStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/domain/ApplyStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/domain/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/domain/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/domain/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/domain/Store.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/domain/UserView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/domain/UserView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/domain/Userinfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/domain/Userinfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/mapper/ApplyStoreMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ApplyStoreMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/mapper/StoreBookMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/StoreBookMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/mapper/StoreMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/StoreMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/mapper/StoreOwnerMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/StoreOwnerMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/mapper/VistorBookMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/VistorBookMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/ProviderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/ProviderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/StoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/StoreService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/impl/ProviderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/impl/ProviderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/impl/StoreBookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/impl/StoreBookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/impl/StoreServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/impl/StoreServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/util/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/cglzwz/util/FileUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ApplyStoreMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ApplyStoreMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/StoreBookMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/StoreBookMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/StoreMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/StoreMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/springmvc/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/springmvc/dispatcher-servlet.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/sql/db_shopping_platform.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/db_shopping_platform.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/view/address.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/view/address.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/html/view/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/view/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/view/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/view/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/html/view/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/view/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/view/update_userinfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/view/update_userinfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/js/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/testJs/updateUserinfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/update_userinfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/testPage/updateUserinfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/testPage/updateUserinfo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sql/db_shopping_platform.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sql/db_shopping_platform.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xyz/cglzwz/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/xyz/cglzwz/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xyz/cglzwz/dao/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/xyz/cglzwz/dao/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xyz/cglzwz/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/xyz/cglzwz/domain/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xyz/cglzwz/domain/Userinfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/xyz/cglzwz/domain/Userinfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xyz/cglzwz/mapper/ApplyStoreMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xyz/cglzwz/mapper/StoreBookMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xyz/cglzwz/mapper/StoreMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xyz/cglzwz/mapper/StoreOwnerMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xyz/cglzwz/mapper/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xyz/cglzwz/mapper/VistorBookMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xyz/cglzwz/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/xyz/cglzwz/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xyz/cglzwz/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/xyz/cglzwz/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taobao.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taobao/WEB-INF/classes/spring/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao/WEB-INF/classes/spring/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taobao/WEB-INF/classes/sql/db_shopping_platform.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao/WEB-INF/classes/sql/db_shopping_platform.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taobao/WEB-INF/classes/xyz/cglzwz/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao/WEB-INF/classes/xyz/cglzwz/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taobao/WEB-INF/classes/xyz/cglzwz/dao/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao/WEB-INF/classes/xyz/cglzwz/dao/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taobao/WEB-INF/classes/xyz/cglzwz/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao/WEB-INF/classes/xyz/cglzwz/domain/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taobao/WEB-INF/classes/xyz/cglzwz/domain/Userinfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao/WEB-INF/classes/xyz/cglzwz/domain/Userinfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taobao/WEB-INF/classes/xyz/cglzwz/mapper/ApplyStoreMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taobao/WEB-INF/classes/xyz/cglzwz/mapper/StoreBookMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taobao/WEB-INF/classes/xyz/cglzwz/mapper/StoreMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taobao/WEB-INF/classes/xyz/cglzwz/mapper/StoreOwnerMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taobao/WEB-INF/classes/xyz/cglzwz/mapper/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taobao/WEB-INF/classes/xyz/cglzwz/mapper/VistorBookMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taobao/WEB-INF/classes/xyz/cglzwz/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao/WEB-INF/classes/xyz/cglzwz/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taobao/WEB-INF/classes/xyz/cglzwz/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao/WEB-INF/classes/xyz/cglzwz/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taobao/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taobao/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taobao/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taobao/html/view/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao/html/view/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taobao/html/view/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao/html/view/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taobao/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao/js/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taobao/js/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao/js/register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/update_userinfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/update_userinfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/taobao.iml" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -140,57 +80,192 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db_shopping_platform@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="db_shopping_platform@localhost [2]" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db_shopping_platform@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="db_shopping_platform@localhost [2]" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db_shopping_platform@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="db_shopping_platform: schema" type="c314c289:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db_shopping_platform@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="db_shopping_platform@localhost [2]" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="db_shopping_platform: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db_shopping_platform@localhost [2]" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="db_shopping_platform: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db_shopping_platform@localhost [2]" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="db_shopping_platform: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="tb_apply_store: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db_shopping_platform@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="db_shopping_platform@localhost [2]" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="db_shopping_platform: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="tb_book: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db_shopping_platform@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="db_shopping_platform: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="tb_store_book: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db_shopping_platform@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="db_shopping_platform: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="tb_store_owner: table" type="98d5ac3d:MysqlImplModel$Table" />
+        <item name="views" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
     </expand>
     <select />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-912416139">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.17" value="2" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="1" />
+          <entry key="gif" value="2" />
+          <entry key="html" value="49" />
+          <entry key="java" value="61" />
+          <entry key="jpg" value="10" />
+          <entry key="js" value="64" />
+          <entry key="md" value="1" />
+          <entry key="sql" value="13" />
+          <entry key="tb_apply_store" value="1" />
+          <entry key="xml" value="11" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="1" />
+          <entry key="Database Element" value="1" />
+          <entry key="HTML" value="49" />
+          <entry key="Image" value="12" />
+          <entry key="JAVA" value="61" />
+          <entry key="JavaScript" value="64" />
+          <entry key="Markdown" value="1" />
+          <entry key="SQL" value="4" />
+          <entry key="Scratch" value="9" />
+          <entry key="XML" value="11" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="1644" />
+          <entry key="java" value="2442" />
+          <entry key="js" value="3702" />
+          <entry key="sql" value="146" />
+          <entry key="txt" value="44" />
+          <entry key="xml" value="321" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="1644" />
+          <entry key="JAVA" value="2442" />
+          <entry key="JavaScript" value="3702" />
+          <entry key="PLAIN_TEXT" value="44" />
+          <entry key="SQL" value="29" />
+          <entry key="Scratch" value="117" />
+          <entry key="XML" value="321" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/controller/UserController.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/html/manage/shop_back.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-29">
-              <caret line="78" column="19" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
+            <state relative-caret-position="247">
+              <caret line="195" lean-forward="true" selection-start-line="195" selection-end-line="195" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/shop_back.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/shop_back_data.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/domain/Book.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="238" column="29" selection-start-line="238" selection-start-column="29" selection-end-line="238" selection-end-column="29" />
+              <folding>
+                <element signature="e#1008#1009#0" expanded="true" />
+                <element signature="e#1038#1039#0" expanded="true" />
+                <element signature="e#1084#1085#0" expanded="true" />
+                <element signature="e#1122#1123#0" expanded="true" />
+                <element signature="e#1156#1157#0" expanded="true" />
+                <element signature="e#1186#1187#0" expanded="true" />
+                <element signature="e#1232#1233#0" expanded="true" />
+                <element signature="e#1270#1271#0" expanded="true" />
+                <element signature="e#1304#1305#0" expanded="true" />
+                <element signature="e#1334#1335#0" expanded="true" />
+                <element signature="e#1380#1381#0" expanded="true" />
+                <element signature="e#1418#1419#0" expanded="true" />
+                <element signature="e#1452#1453#0" expanded="true" />
+                <element signature="e#1482#1483#0" expanded="true" />
+                <element signature="e#1528#1529#0" expanded="true" />
+                <element signature="e#1566#1567#0" expanded="true" />
+                <element signature="e#1600#1601#0" expanded="true" />
+                <element signature="e#1630#1631#0" expanded="true" />
+                <element signature="e#1676#1677#0" expanded="true" />
+                <element signature="e#1714#1715#0" expanded="true" />
+                <element signature="e#1754#1755#0" expanded="true" />
+                <element signature="e#1783#1784#0" expanded="true" />
+                <element signature="e#1834#1835#0" expanded="true" />
+                <element signature="e#1870#1871#0" expanded="true" />
+                <element signature="e#1910#1911#0" expanded="true" />
+                <element signature="e#1939#1940#0" expanded="true" />
+                <element signature="e#1990#1991#0" expanded="true" />
+                <element signature="e#2026#2027#0" expanded="true" />
+                <element signature="e#2066#2067#0" expanded="true" />
+                <element signature="e#2095#2096#0" expanded="true" />
+                <element signature="e#2146#2147#0" expanded="true" />
+                <element signature="e#2182#2183#0" expanded="true" />
+                <element signature="e#2222#2223#0" expanded="true" />
+                <element signature="e#2251#2252#0" expanded="true" />
+                <element signature="e#2302#2303#0" expanded="true" />
+                <element signature="e#2338#2339#0" expanded="true" />
+                <element signature="e#2378#2379#0" expanded="true" />
+                <element signature="e#2407#2408#0" expanded="true" />
+                <element signature="e#2458#2459#0" expanded="true" />
+                <element signature="e#2494#2495#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/controller/StoreController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="415">
+              <caret line="66" column="73" selection-start-line="66" selection-start-column="73" selection-end-line="66" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -198,43 +273,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/html/view/index.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/my_store.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="121" column="57" lean-forward="true" selection-start-line="121" selection-start-column="57" selection-end-line="121" selection-end-column="57" />
+            <state relative-caret-position="487">
+              <caret line="43" column="29" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="update_userinfo.html" pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/controller/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-305">
+              <caret line="79" column="73" lean-forward="true" selection-start-line="79" selection-start-column="73" selection-end-line="79" selection-end-column="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/domain/Userinfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/html/view/update_userinfo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-289">
-              <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="update_userinfo.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/update_userinfo.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/html/view/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="49">
-              <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="39" selection-start-line="39" selection-end-line="45" selection-end-column="46" />
+            <state relative-caret-position="151">
+              <caret line="11" column="89" lean-forward="true" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="89" />
             </state>
           </provider>
         </entry>
@@ -244,25 +314,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="web" />
-        <option value="applicationContext" />
-        <option value="jdbc" />
-        <option value="sqlMapConfig" />
-        <option value="dispatcher-servlet" />
-        <option value="log4j" />
-        <option value="redis" />
         <option value="HTML File" />
-        <option value="JavaScript File" />
-        <option value="mappper" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>id</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -270,57 +326,55 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/dao/StoreOwnerMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/mapper/StoreOwnerMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/dao/ApplyStoreMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/mapper/ApplyStoreMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/dao/StoreMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/util/FileUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/impl/ProviderServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/domain/Store.java" />
-        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/mapper/StoreMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/StoreService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/impl/StoreServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/domain/Book.java" />
-        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/domain/StoreBookRelation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/mapper/BookMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/dao/BookMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/BookService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/impl/BookServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/testPage/updateUserinfo.html" />
-        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/dao/StoreBookMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/StoreBookService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/impl/StoreBookServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/VistorService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/dao/VistorBookMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/mapper/VistorBookMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/impl/VistorServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/TransactionService.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/StoreBookMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/register.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/login.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/html/view/register.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/html/view/login.html" />
-        <option value="$PROJECT_DIR$/src/test/java/collection/collection.java" />
-        <option value="$PROJECT_DIR$/src/test/java/collection/TestToString.java" />
-        <option value="$PROJECT_DIR$/src/test/java/normal/TestToString.java" />
-        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/domain/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/domain/Userinfo.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8a8d1f8f-20dd-46f3-8d91-34d6adc881cf/console.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8a8d1f8f-20dd-46f3-8d91-34d6adc881cf/console_2.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8a8d1f8f-20dd-46f3-8d91-34d6adc881cf/console_3.sql" />
+        <option value="$PROJECT_DIR$/src/main/webapp/html/view/address.html" />
+        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/domain/UserView.java" />
         <option value="$PROJECT_DIR$/src/main/resources/sql/db_shopping_platform.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/dao/UserMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/main.js" />
+        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/domain/Userinfo.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/file/TestFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/util/FileUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/json/TestTransform.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/domain/UserView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/util/JSONUtil.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/login.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/html/view/index.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/html/view/updateUserinfo.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/html/manage/operator_back.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/ApplyStoreMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/domain/ApplyStore.java" />
+        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/impl/StoreServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/StoreService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/html/view/register.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/apply_store.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/index.js" />
+        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/html/view/update_userinfo.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/html/view/apply_store.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/register.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/update_userinfo.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/html/manage/operator_shop.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/html/manage/operator_shopApply.html" />
+        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/ProviderService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/impl/ProviderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/dao/ApplyStoreMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/controller/ProviderController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/operator_shopApply.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/StoreMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/store.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/html/view/index.html" />
+        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/domain/Store.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/springmvc/dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/normal/TestNull.java" />
+        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/impl/StoreBookServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/StoreBookMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/html/view/my_store.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/my_store.js" />
+        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/controller/StoreController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/shop_back.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/shop_back_data.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/html/manage/shop_back.html" />
+        <option value="$PROJECT_DIR$/src/main/java/xyz/cglzwz/domain/Book.java" />
       </list>
     </option>
   </component>
@@ -337,73 +391,46 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="taobao Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="taobao Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
-  </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="width" value="1036" />
-    <option name="height" value="1060" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1446" />
+    <option name="height" value="1032" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping-platform" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping-platform" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping-platform" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping-platform" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping-platform" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -411,7 +438,7 @@
             </path>
             <path>
               <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping-platform" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -420,7 +447,7 @@
             </path>
             <path>
               <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping-platform" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -429,7 +456,7 @@
             </path>
             <path>
               <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping-platform" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -438,7 +465,7 @@
             </path>
             <path>
               <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping-platform" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -447,7 +474,7 @@
             </path>
             <path>
               <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping-platform" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -457,23 +484,14 @@
             </path>
             <path>
               <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cglzwz" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping-platform" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping-platform" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -481,15 +499,7 @@
             </path>
             <path>
               <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping-platform" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -497,7 +507,7 @@
             </path>
             <path>
               <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping-platform" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -505,22 +515,14 @@
             </path>
             <path>
               <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping-platform" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping-platform" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
@@ -528,7 +530,16 @@
             </path>
             <path>
               <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping-platform" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="manage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shopping-platform" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
@@ -537,7 +548,7 @@
             </path>
             <path>
               <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping-platform" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
@@ -545,52 +556,37 @@
             </path>
             <path>
               <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping-platform" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="testJs" type="462c0819:PsiDirectoryNode" />
+              <item name="picture" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping-platform" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="testPage" type="462c0819:PsiDirectoryNode" />
+              <item name="picture" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping-platform" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping-platform" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="date" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="json" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping-platform" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -600,51 +596,31 @@
               <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
-            <path>
-              <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: log4j:log4j:1.2.17" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: mysql:mysql-connector-java:8.0.13" type="70bed36:NamedLibraryElementNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="am&#9;FILE&#9;jar:///usr/jdk1.8/jre/lib/ext/cldrdata.jar!/sun/text/resources/cldr/am" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="database.console.LAST_STATE" value="false" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="database.console.LAST_STATE" value="true" />
+    <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.13/mysql-connector-java-8.0.13.jar" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/js" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/html/view" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/icon" />
-      <recent name="$PROJECT_DIR$/src/main/resources/icon" />
-      <recent name="$PROJECT_DIR$/src/main/resources/sql" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/src/main/webapp" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/testPage" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/" />
+      <recent name="F:\idea projects\shopping-platform\src\main\webapp\picture\book" />
+      <recent name="F:\idea projects\shopping-platform\src\main\webapp\picture\store" />
+      <recent name="F:\idea projects\shopping-platform\src\main\webapp\picture\user" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -660,10 +636,23 @@
     </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.login.html">
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <configuration name="TestFile.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="taobao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="file.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="file" />
+      <option name="MAIN_CLASS_NAME" value="file.TestFile" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="TestToString.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestNull.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="taobao" />
       <extension name="coverage">
         <pattern>
@@ -671,94 +660,26 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="normal" />
-      <option name="MAIN_CLASS_NAME" value="normal.TestToString" />
+      <option name="MAIN_CLASS_NAME" value="normal.TestNull" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="TestTransform.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="taobao" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="json.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="json" />
-      <option name="MAIN_CLASS_NAME" value="json.TestTransform" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="first" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.81" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
+    <configuration name="chgl16" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.12" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/shop" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="taobao:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/" />
+            <option name="CONTEXT_PATH" value="/shop" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_taobao_2" />
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_taobao" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -766,7 +687,7 @@
       <predefined_log_file id="Tomcat Host Manager" enabled="false" />
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="39061" />
+        <option name="DEBUG_PORT" value="56376" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -813,13 +734,14 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
-      <method>
+      <method v="2">
+        <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="taobao:war exploded" />
         </option>
       </method>
     </configuration>
-    <configuration name="login.html (1)" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 9.0.81" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="login.html" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 9.0.12" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/html/view/login.html" />
       <deployment>
         <artifact name="taobao:war">
@@ -829,13 +751,31 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="login_html_(1)_taobao" />
+        <option name="BASE_DIRECTORY_NAME" value="login_html_taobao" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
       <predefined_log_file id="Tomcat Manager" enabled="false" />
       <predefined_log_file id="Tomcat Host Manager" enabled="false" />
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="52887" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -851,51 +791,14 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
-      <method>
+      <method v="2">
+        <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="taobao:war" />
         </option>
       </method>
     </configuration>
-    <configuration name="login.html" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 9.0.81" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/html/view/login.html" />
-      <deployment>
-        <artifact name="taobao:war">
-          <settings>
-            <option name="CONTEXT_PATH" value="/" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="login_html_taobao_2" />
-      </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method>
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="taobao:war" />
-        </option>
-      </method>
-    </configuration>
-    <configuration name="register.html" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 9.0.81" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="register.html" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 9.0.12" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/html/view/register.html" />
       <deployment>
         <artifact name="taobao:war">
@@ -905,7 +808,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="register_html_taobao_2" />
+        <option name="BASE_DIRECTORY_NAME" value="register_html_taobao" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -927,27 +830,26 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
-      <method>
+      <method v="2">
+        <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="taobao:war" />
         </option>
       </method>
     </configuration>
     <list>
-      <item itemvalue="Tomcat Server.first" />
-      <item itemvalue="Tomcat Server.register.html" />
-      <item itemvalue="JUnit.TestToString.test1" />
+      <item itemvalue="Tomcat Server.chgl16" />
       <item itemvalue="Tomcat Server.login.html" />
-      <item itemvalue="Tomcat Server.login.html (1)" />
-      <item itemvalue="JUnit.TestTransform.test1" />
+      <item itemvalue="JUnit.TestFile.test1" />
+      <item itemvalue="Tomcat Server.register.html" />
+      <item itemvalue="JUnit.TestNull.test1" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Tomcat Server.login.html" />
-        <item itemvalue="JUnit.TestTransform.test1" />
-        <item itemvalue="Tomcat Server.login.html (1)" />
-        <item itemvalue="JUnit.TestToString.test1" />
+        <item itemvalue="JUnit.TestNull.test1" />
         <item itemvalue="Tomcat Server.register.html" />
+        <item itemvalue="JUnit.TestFile.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -956,94 +858,115 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c7a22080-ee7b-4c55-a34f-f7492243a231" name="Default" comment="" />
-      <created>1541129335692</created>
+      <changelist id="36b3af24-3d35-4363-8c73-3835fdcc1945" name="Default Changelist" comment="" />
+      <created>1542547155166</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1541129335692</updated>
-      <workItem from="1541129337699" duration="1563000" />
-      <workItem from="1541379709100" duration="24756000" />
-      <workItem from="1541494041543" duration="9555000" />
-      <workItem from="1541510096187" duration="5896000" />
-      <workItem from="1541558679787" duration="33376000" />
-      <workItem from="1541689273130" duration="10158000" />
-      <workItem from="1541898153566" duration="43245000" />
-      <workItem from="1542076166150" duration="3062000" />
-      <workItem from="1542279716460" duration="23274000" />
+      <updated>1542547155166</updated>
+      <workItem from="1542547158815" duration="3233000" />
+      <workItem from="1542554342141" duration="3554000" />
+      <workItem from="1542593033046" duration="24436000" />
+      <workItem from="1542954515772" duration="27771000" />
+      <workItem from="1543024043095" duration="22836000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestDate_test - 2018.11.11 at 13h 13m 33s.xml">
-      <configuration name="TestDate.test" configurationId="JUnit" />
+    <history-entry file="TestFile_test1 - 2018.11.19 at 21h 36m 14s.xml">
+      <configuration name="TestFile.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDate - 2018.11.11 at 13h 38m 15s.xml">
-      <configuration name="TestDate" configurationId="JUnit" />
+    <history-entry file="TestFile_test1 - 2018.11.19 at 21h 36m 37s.xml">
+      <configuration name="TestFile.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestToString_test1 - 2018.11.15 at 22h 27m 09s.xml">
-      <configuration name="TestToString.test1" configurationId="JUnit" />
+    <history-entry file="TestFile_test1 - 2018.11.19 at 21h 37m 47s.xml">
+      <configuration name="TestFile.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestToString_test1 - 2018.11.15 at 22h 29m 17s.xml">
-      <configuration name="TestToString.test1" configurationId="JUnit" />
+    <history-entry file="TestFile_test1 - 2018.11.19 at 21h 38m 45s.xml">
+      <configuration name="TestFile.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestToString_test1 - 2018.11.15 at 22h 30m 52s.xml">
-      <configuration name="TestToString.test1" configurationId="JUnit" />
+    <history-entry file="TestFile_test1 - 2018.11.19 at 21h 39m 17s.xml">
+      <configuration name="TestFile.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestTransform_test1 - 2018.11.16 at 11h 45m 55s.xml">
-      <configuration name="TestTransform.test1" configurationId="JUnit" />
+    <history-entry file="TestFile_test1 - 2018.11.19 at 21h 40m 57s.xml">
+      <configuration name="TestFile.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestFile_test1 - 2018.11.19 at 21h 41m 35s.xml">
+      <configuration name="TestFile.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestFile_test1 - 2018.11.19 at 21h 44m 32s.xml">
+      <configuration name="TestFile.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestNull_test1 - 2018.11.24 at 16h 15m 27s.xml">
+      <configuration name="TestNull.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestNull_test1 - 2018.11.24 at 16h 15m 42s.xml">
+      <configuration name="TestNull.test1" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154885000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="81830000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1016" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50032747" side_tool="true" weight="0.32982457" />
-      <window_info anchor="bottom" id="Application Servers" order="14" weight="0.32982457" />
-      <window_info anchor="right" id="Maven Projects" order="3" weight="0.3295699" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="3" weight="0.30268818" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20922747" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24950495" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="2" weight="0.3290398" />
-      <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.49946237" weight="0.3298122" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.32982457" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="11" weight="0.3298122" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.35714287" />
-      <window_info anchor="bottom" id="Spring" order="12" weight="0.46830985" />
-      <window_info anchor="bottom" id="Terminal" order="13" weight="0.32982457" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30698925" />
       <window_info id="Web" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49967256" weight="0.3298122" />
-      <window_info id="Learn" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Database Console" order="15" weight="0.32982457" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Learn" order="4" weight="0.3295626" />
+      <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946353" weight="0.3291714" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8363734" visible="true" weight="0.35187286" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39954597" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3291714" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.16362661" side_tool="true" weight="0.35187286" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49892703" weight="0.3291714" />
+      <window_info anchor="bottom" id="Database Console" order="14" visible="true" weight="0.3291714" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3299356" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20922747" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Web" order="2" side_tool="true" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Learn" order="4" weight="0.3295626" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946353" weight="0.3291714" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8363734" visible="true" weight="0.35187286" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39954597" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3291714" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.16362661" side_tool="true" weight="0.35187286" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49892703" weight="0.3291714" />
+      <window_info anchor="bottom" id="Database Console" order="14" visible="true" weight="0.3291714" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3299356" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -1051,402 +974,392 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="1" />
-    </breakpoint-manager>
-  </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/StoreService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/impl/StoreServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/domain/StoreBookRelation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/ProviderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="35" selection-start-line="35" selection-end-line="39" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/testJs/update_userinfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/testPage/updateUserinfo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="59" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/html/view/product_details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="83" column="22" lean-forward="true" selection-start-line="83" selection-start-column="22" selection-end-line="83" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/dao/StoreOwnerMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/impl/StoreBookServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2299">
-          <caret line="108" column="30" selection-start-line="108" selection-start-column="30" selection-end-line="108" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/StoreBookService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/VistorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="84" column="37" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="84" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/StoreMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="832">
-          <caret line="32" column="85" selection-start-line="32" selection-start-column="85" selection-end-line="32" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/dao/VistorBookMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2132">
-          <caret line="87" column="37" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/VistorBookMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1040">
-          <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/dao/StoreBookMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1872">
-          <caret line="77" column="19" selection-start-line="77" selection-start-column="19" selection-end-line="77" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/impl/ProviderServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="28" selection-start-line="27" selection-start-column="3" selection-end-line="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/impl/VistorServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1300">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ApplyStoreMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="52" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/TransactionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="81" column="6" selection-start-line="81" selection-start-column="6" selection-end-line="81" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/taobao/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/html/view/category_list.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/springmvc/dispatcher-servlet.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/domain/Transaction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        <state relative-caret-position="283">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-468" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/html/view/register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="53" column="14" lean-forward="true" selection-start-line="51" selection-start-column="8" selection-end-line="53" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/register.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="50" column="7" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="50" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/collection/TestToString.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/date/TestDate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/normal/TestToString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#238#254#0" expanded="true" />
-            <element signature="e#641#649#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/StoreOwnerMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/StoreBookMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/domain/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/domain/Transaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-520">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="205">
+          <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/sql/db_shopping_platform.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="127" column="55" selection-start-line="127" selection-start-column="55" selection-end-line="127" selection-end-column="55" />
+        <state relative-caret-position="264">
+          <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/impl/VistorServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="64" column="15" selection-start-line="64" selection-start-column="15" selection-end-line="64" selection-end-column="15" />
-          <folding>
-            <element signature="e#1609#1610#0" expanded="true" />
-            <element signature="e#1634#1635#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="86" column="5" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/dao/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5">
-          <caret line="36" column="18" lean-forward="true" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="20" column="16" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="20" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="39" selection-start-line="39" selection-end-line="45" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="59" column="35" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
+        <state relative-caret-position="-149">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/html/view/login.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/html/view/product_details.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/apply_store.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
+        <state relative-caret-position="48">
+          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/util/JSONUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/html/view/apply_store.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="264">
+          <caret line="32" column="11" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/json/TestTransform.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/picture/store/default.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/operator_shop.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/html/manage/operator_back.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="216">
+          <caret line="56" column="35" lean-forward="true" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/domain/UserView.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/html/manage/operator_customerBlack.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/html/manage/operator_shop.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-921">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#355#356#0" expanded="true" />
-            <element signature="e#380#381#0" expanded="true" />
-            <element signature="e#413#414#0" expanded="true" />
-            <element signature="e#441#442#0" expanded="true" />
-            <element signature="e#473#474#0" expanded="true" />
-            <element signature="e#501#502#0" expanded="true" />
-            <element signature="e#543#544#0" expanded="true" />
-            <element signature="e#577#578#0" expanded="true" />
-            <element signature="e#612#613#0" expanded="true" />
-            <element signature="e#643#644#0" expanded="true" />
-            <element signature="e#691#692#0" expanded="true" />
-            <element signature="e#731#732#0" expanded="true" />
-            <element signature="e#764#765#0" expanded="true" />
-            <element signature="e#795#796#0" expanded="true" />
-            <element signature="e#841#842#0" expanded="true" />
-            <element signature="e#881#882#0" expanded="true" />
-            <element signature="e#914#915#0" expanded="true" />
-            <element signature="e#943#944#0" expanded="true" />
-            <element signature="e#987#988#0" expanded="true" />
-            <element signature="e#1023#1024#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="552">
+          <caret line="50" column="60" selection-start-line="50" selection-start-column="60" selection-end-line="50" selection-end-column="60" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/domain/User.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/domain/ApplyStore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="51" column="13" lean-forward="true" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+        <state relative-caret-position="195">
+          <caret line="70" column="5" lean-forward="true" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="34" column="44" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
+        <state relative-caret-position="-1293">
+          <caret line="33" column="43" lean-forward="true" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/html/view/index.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ApplyStoreMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="121" column="57" lean-forward="true" selection-start-line="121" selection-start-column="57" selection-end-line="121" selection-end-column="57" />
+        <state relative-caret-position="432">
+          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/domain/Userinfo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/dao/ApplyStoreMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1144">
-          <caret line="71" column="31" lean-forward="true" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
+        <state relative-caret-position="864">
+          <caret line="58" column="15" selection-start-line="58" selection-start-column="15" selection-end-line="58" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/controller/UserController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/html/manage/operator_shopApply.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-29">
-          <caret line="78" column="19" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
+        <state relative-caret-position="1872">
+          <caret line="78" column="27" selection-start-line="78" selection-start-column="27" selection-end-line="78" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/ProviderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/impl/ProviderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="87" column="16" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/StoreBookService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/operator_shopApply.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/controller/ProviderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="53" column="14" lean-forward="true" selection-start-line="53" selection-start-column="14" selection-end-line="53" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/dao/StoreMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/StoreMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/html/view/store.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1008">
+          <caret line="12" column="7" lean-forward="true" selection-end-line="97" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/StoreService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/html/view/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="101" column="76" selection-start-line="101" selection-start-column="76" selection-end-line="101" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/springmvc/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/normal/TestNull.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/domain/Store.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="81" column="33" selection-start-line="81" selection-start-column="33" selection-end-line="81" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/StoreBookMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/update_userinfo.js">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="888">
+          <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="28" column="54" lean-forward="true" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/impl/StoreServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-588">
+          <caret line="41" column="23" lean-forward="true" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/my_store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="43" column="29" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-305">
+          <caret line="79" column="73" lean-forward="true" selection-start-line="79" selection-start-column="73" selection-end-line="79" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/domain/Userinfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/html/view/my_store.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1464">
+          <caret line="61" column="55" lean-forward="true" selection-start-line="61" selection-start-column="55" selection-end-line="61" selection-end-column="55" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/dao/StoreBookMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="68" column="7" lean-forward="true" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/service/impl/StoreBookServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-233">
+          <caret line="58" column="40" lean-forward="true" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/controller/StoreController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="66" column="73" selection-start-line="66" selection-start-column="73" selection-end-line="66" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/html/view/update_userinfo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-289">
-          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        <state relative-caret-position="151">
+          <caret line="11" column="89" lean-forward="true" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/shop_back.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/html/manage/shop_back.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="195" lean-forward="true" selection-start-line="195" selection-end-line="195" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/shop_back_data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/xyz/cglzwz/domain/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="238" column="29" selection-start-line="238" selection-start-column="29" selection-end-line="238" selection-end-column="29" />
+          <folding>
+            <element signature="e#1008#1009#0" expanded="true" />
+            <element signature="e#1038#1039#0" expanded="true" />
+            <element signature="e#1084#1085#0" expanded="true" />
+            <element signature="e#1122#1123#0" expanded="true" />
+            <element signature="e#1156#1157#0" expanded="true" />
+            <element signature="e#1186#1187#0" expanded="true" />
+            <element signature="e#1232#1233#0" expanded="true" />
+            <element signature="e#1270#1271#0" expanded="true" />
+            <element signature="e#1304#1305#0" expanded="true" />
+            <element signature="e#1334#1335#0" expanded="true" />
+            <element signature="e#1380#1381#0" expanded="true" />
+            <element signature="e#1418#1419#0" expanded="true" />
+            <element signature="e#1452#1453#0" expanded="true" />
+            <element signature="e#1482#1483#0" expanded="true" />
+            <element signature="e#1528#1529#0" expanded="true" />
+            <element signature="e#1566#1567#0" expanded="true" />
+            <element signature="e#1600#1601#0" expanded="true" />
+            <element signature="e#1630#1631#0" expanded="true" />
+            <element signature="e#1676#1677#0" expanded="true" />
+            <element signature="e#1714#1715#0" expanded="true" />
+            <element signature="e#1754#1755#0" expanded="true" />
+            <element signature="e#1783#1784#0" expanded="true" />
+            <element signature="e#1834#1835#0" expanded="true" />
+            <element signature="e#1870#1871#0" expanded="true" />
+            <element signature="e#1910#1911#0" expanded="true" />
+            <element signature="e#1939#1940#0" expanded="true" />
+            <element signature="e#1990#1991#0" expanded="true" />
+            <element signature="e#2026#2027#0" expanded="true" />
+            <element signature="e#2066#2067#0" expanded="true" />
+            <element signature="e#2095#2096#0" expanded="true" />
+            <element signature="e#2146#2147#0" expanded="true" />
+            <element signature="e#2182#2183#0" expanded="true" />
+            <element signature="e#2222#2223#0" expanded="true" />
+            <element signature="e#2251#2252#0" expanded="true" />
+            <element signature="e#2302#2303#0" expanded="true" />
+            <element signature="e#2338#2339#0" expanded="true" />
+            <element signature="e#2378#2379#0" expanded="true" />
+            <element signature="e#2407#2408#0" expanded="true" />
+            <element signature="e#2458#2459#0" expanded="true" />
+            <element signature="e#2494#2495#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1515,21 +1428,9 @@
           </splitter-proportions>
         </settings>
       </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: mysql:mysql-connector-java:8.0.13</last-edited>
+          <last-edited>Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

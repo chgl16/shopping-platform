@@ -18,6 +18,8 @@
         <result column="role_type" property="roleType"/>
         <result column="username" property="username"/>
         <result column="img_url" property="imgUrl"/>
+        <result column="contact_phone" property="contactPhone"/>
+        <result column="contact_address" property="contactAddress"/>
     </resultMap>
 
     <select id="findUserByPhone" parameterType="string" resultType="integer">
@@ -54,10 +56,10 @@
                 username = #{username},
             </if>
             <if test="contactPhone != null and contactPhone != ''">
-                contact_phone = #{contactPhone}
+                contact_phone = #{contactPhone},
             </if>
             <if test="contactAddress != null and contactAddress != ''">
-                contact_address = #{contactAddress}
+                contact_address = #{contactAddress},
             </if>
             <if test="imgUrl != null and imgUrl != ''">
                 img_url = #{imgUrl}

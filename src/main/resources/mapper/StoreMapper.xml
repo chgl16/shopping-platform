@@ -5,7 +5,7 @@
 <mapper namespace="xyz.cglzwz.dao.StoreMapper">
 
     <resultMap id="storeResultMap" type="store">
-        <id column="pk_id" property="pkId"/>
+        <id column="pk_id" property="id"/>
         <result column="uk_name" property="name"/>
         <result column="founding_time" property="foundingTime"/>
         <result column="introduction" property="introduction"/>
@@ -24,7 +24,7 @@
 
     <update id="updateStore" parameterType="store">
         UPDATE tb_store SET uk_name = #{name}, introduction = #{introduction}, address = #{address}, img_url = #{imgUrl}
-            WHERE pk_id = #{pkId}
+            WHERE pk_id = #{id}
     </update>
 
     <!-- 通过店主id获取店铺信息 -->

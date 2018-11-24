@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>修改信息</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="../../css/backPublic.css">
+	<link rel="stylesheet" type="text/css" href="../../css/shop_modifyMess.css">
+</head>
+<body>
+	<div class="container">
+		<div class="left_box">
+			<div class="top_title">
+				<svg class="tree_icon" aria-hidden="true">
+	  				<use xlink:href="#icon-shu"></use>
+				</svg>
+				<span>BOOK_MALL</span>
+			</div>
+			<ul class="left_page">
+				<li>
+					<span class="left_page_item">
+						<svg class="li_icon" aria-hidden="true">
+	  						<use xlink:href="#icon-shangpin"></use>
+						</svg>
+						宝贝管理
+						<svg class="sanjiao_icon down" aria-hidden="true">
+	  						<use xlink:href="#icon-sanjiaoxinggengduo"></use>
+						</svg>
+					</span>
+					<ul class="sub_ul hidden">
+						<li><a href="shop_back.html">发布宝贝</a></li>
+						<li><a href="shop_selling.html">出售中的宝贝</a></li>
+						<li><a href="#">仓库中的宝贝</a></li>
+						<li><a href="#">历史宝贝</a></li>
+					</ul>
+				</li>
+				<li>
+					<span class="left_page_item">
+						<svg class="li_icon" aria-hidden="true">
+	  						<use xlink:href="#icon-icon1460188781620"></use>
+						</svg>
+						物流管理
+						<svg class="sanjiao_icon down" aria-hidden="true">
+	  						<use xlink:href="#icon-sanjiaoxinggengduo"></use>
+						</svg>
+					</span>
+					<ul class="sub_ul hidden">
+						<li><a href="shop_send.html">商家发货</a></li>
+						<li><a href="#">发货中的订单</a></li>
+					</ul>
+				</li>
+				<li>
+					<span class="left_page_item">
+						<svg class="li_icon" aria-hidden="true">
+	  						<use xlink:href="#icon-jiaoyi"></use>
+						</svg>
+						交易管理
+						<svg class="sanjiao_icon down" aria-hidden="true">
+	  						<use xlink:href="#icon-sanjiaoxinggengduo"></use>
+						</svg>
+					</span>
+					<ul class="sub_ul hidden">
+						<li><a href="#">已卖出的宝贝</a></li>
+					</ul>
+				</li>
+				<li>
+					<span class="left_page_item">
+						<svg class="li_icon" aria-hidden="true">
+	  						<use xlink:href="#icon-fuwu2"></use>
+						</svg>
+						客户服务
+						<svg class="sanjiao_icon up" aria-hidden="true">
+	  						<use xlink:href="#icon-sanjiaoxinggengduo"></use>
+						</svg>
+					</span>
+					<ul class="sub_ul hidden">
+						<li><a href="#">退款管理</a></li>
+					</ul>
+				</li>
+				<li>
+					<span class="left_page_item">
+						<svg class="li_icon" aria-hidden="true">
+	  						<use xlink:href="#icon-shangjia"></use>
+						</svg>
+						店铺管理
+						<svg class="sanjiao_icon down" aria-hidden="true">
+	  						<use xlink:href="#icon-sanjiaoxinggengduo"></use>
+						</svg>
+					</span>
+					<ul class="sub_ul show">
+						<li><a href="shop_modifyMess.html" class="red">修改信息</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="right_box">
+			<div class="page_path">
+				<svg class="path_icon" aria-hidden="true">
+	  				<use xlink:href="#icon-lubiao"></use>
+				</svg>
+				当前位置：店铺管理 > 修改信息
+			</div>
+			<form id="shop_form">
+				<div class="img_input_box">
+					<input type="file" name="img" accept="image/png,image/jpeg,image/gif,image/jpg">
+					<img src="../../img/manage/1.jpg" class="img_box">
+				</div>
+				<div class="input_box">
+					<span>店铺id:</span><input type="text" name="shop_id" readonly="readonly">
+					<div class="form_tips hidden"></div>
+				</div>
+				<div class="input_box">
+					<span>店名:</span><input type="text" name="shop_name" maxlength="10">
+					<div class="form_tips hidden"></div>
+				</div>
+				<div class="input_box">
+					<span>创班时间:</span><input type="text" name="shop_time" readonly="readonly">
+					<div class="form_tips hidden"></div>
+				</div>
+				<div class="input_box">
+					<span>发货地址:</span><input type="text" name="shop_adress" maxlength="25">
+				</div>
+				<div class="textarea_box">
+					<span>店铺介绍:</span><textarea type="text" name="shop_desc" class="shop_desc" maxlength="50"></textarea>
+				</div>
+			</form>
+			<div class="post_btn">提交修改</div>
+		</div>
+	</div>
+
+
+
+</body>
+
+<script src="../../lib/layDate-v5.0.9/laydate/laydate.js"></script>
+<script src="../../js/iconfont.js"></script>
+<script src="../../js/backPublic.js"></script>
+<script src="../../js/shop_modifyMess.js"></script>
+</html>
