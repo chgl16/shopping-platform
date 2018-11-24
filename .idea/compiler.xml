@@ -6,8 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="shopping-platform" />
         <module name="taobao" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="shopping-platform" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>

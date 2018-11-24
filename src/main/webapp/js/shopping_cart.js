@@ -1,4 +1,9 @@
- //计算赋值方法
+window.onload = function(){
+    
+}
+
+
+//计算赋值方法
  function a(flag) {
     var nowVal = $("#inputVal").val();
     if (flag == '+') {
