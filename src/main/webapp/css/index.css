@@ -641,3 +641,6 @@ a:hover, a:visited, a:link, a:active {
     margin-left: .2rem;
     font-size: .6rem;
 }
+.delete-all{
+    margin-left: .4rem;
+}
