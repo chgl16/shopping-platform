@@ -183,7 +183,7 @@ a:hover, a:visited, a:link, a:active {
 
 .swiper-container {
     width: 100%;
-    height: 8rem;
+    height: 12rem;
 	padding:.2rem 0;
 }  
 .swiper-wrapper-body{
@@ -405,8 +405,7 @@ a:hover, a:visited, a:link, a:active {
     text-align: right;
 }
 .order-product-main{
-    display: flex;
-    display: -webkit-flex;
+    flex-grow: 1;
 }
 .order-product-content{
     font-size: .7rem;
@@ -641,3 +640,63 @@ a:hover, a:visited, a:link, a:active {
     margin-left: .2rem;
     font-size: .6rem;
 }
+
+.hidden-span {
+    display: none;
+}
+
+ .confirm{
+     display: flex;
+     display: -webkit-flex;
+     border: 1px #ccc solid;
+     width: 100%;
+     padding: 1rem;
+     border-radius: .5rem;
+     background-color: #fff;
+
+ }
+ .confirm-input{
+     width: 100%;
+ }
+ .confirm-btn{
+     text-align: right;
+ }
+ .confirm-input input,.confirm-input button{
+     flex-grow: 1;
+     overflow: hidden;
+     border: none;
+     outline: none;
+     background-color:transparent;
+     color: #191414;
+     font-size: .7rem;
+     cursor: pointer;
+ }
+ @media only screen and (min-width: 768px) {
+     html{
+         font-size: 54px;
+     }
+         body{
+         width: 100%;
+         margin: 0 auto;
+     }
+     .page-group{
+         width: 768px;
+         margin: auto;
+         position: static;
+     }
+     .page header{
+         width: 768px;
+         margin: 0 auto;
+     }
+         .content,.panel-reveal,.bar-tab{
+                 width: 768px;
+                 margin: 0 auto;
+     }
+ }
+
+ .tabs{
+     width: 100%;
+ }
+ .tabs .tab .content-block{
+     display: block;
+ }

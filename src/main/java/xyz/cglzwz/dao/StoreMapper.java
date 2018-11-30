@@ -42,4 +42,12 @@ public interface StoreMapper {
      * @return
      */
     public Integer selectPkIdByuKName(String name);
+
+    /**
+     * 通过店铺id获取店铺
+     *
+     * @param storeId
+     * @return
+     */
+    public Store selectStoreById(int storeId);
 }

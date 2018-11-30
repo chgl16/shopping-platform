@@ -23,14 +23,19 @@
             <div class="content">
                 <div class="buttons-tab">
                     <a href="#tab1" class="tab-link active button">全部</a>
+                    <!-- 暂时去掉代付款和退款功能
                     <a href="#tab2" class="tab-link button">待付款</a>
+                    -->
                     <a href="#tab3" class="tab-link button">待发货</a>
                     <a href="#tab4" class="tab-link button">待收货</a>
                 </div>
+
+                <!-- 所有订单 -->
                 <div class="content-block">
                     <div class="tabs">
                     <div id="tab1" class="tab active">
-
+                        <div id="all-transaction">
+                            <!--
                        <a href="my_order_detail.html" class="content-block order-list external">
                         <div class="order-store">
                             <div class="order-store-name"><i class="iconfont icon-dianpu"></i>鑫源泽数码专营店</div>
@@ -54,12 +59,13 @@
                         </div>
                         <div class="line"></div>
                         <div class="wuliu-info">
-                            <div>退款</div>
+                            <div>查看</div>
                         </div>
                     </a>
-                       
-
+                    -->
                     </div>
+                 </div>
+                    <!--
                     <div id="tab2" class="tab">
                         <div class="content-block">
 
@@ -89,28 +95,29 @@
                                     <div>退款</div>
                                 </div>
                             </a>
-
                         </div>
                     </div>
-                    <div id="tab3" class="tab">
-                        <div class="content-block">
+                    -->
 
+                    <div id="tab3" class="tab">
+                        <div class="content-block" id="unsend-transaction">
+                            <!--
                                 <a href="my_order_detail.html" class="content-block order-list external">
                                         <div class="order-store">
                                             <div class="order-store-name"><i class="iconfont icon-dianpu"></i>鑫源泽数码专营店</div>
                                             <div class="order-status">卖家已发货</div>
                                         </div>
-        
+
                                         <div class="order-product">
                                             <img class="order-product-img" src="../../img/loading.gif" alt="">
-                                            <div class="order-product-main"> 
-                                                <div class="order-product-content">电脑耳机头戴式台式电竞游戏耳麦网吧带麦吃鸡NUBWO/狼博旺 N1有线带话筒笔记本手机7.1声道绝地求生听声辩位</div> 
+                                            <div class="order-product-main">
+                                                <div class="order-product-content">电脑耳机头戴式台式电竞游戏耳麦网吧带麦吃鸡NUBWO/狼博旺 N1有线带话筒笔记本手机7.1声道绝地求生听声辩位</div>
                                                 <div class="order-product-price-info">
                                                     <div class="order-product-price">￥25.00</div>
                                                     <div class="order-product-price">x1</div>
                                                 </div>
                                             </div>
-                                            
+
                                         </div>
                                         <div class="order-count">
                                             <span>共1件商品</span>
@@ -118,16 +125,15 @@
                                         </div>
                                         <div class="line"></div>
                                         <div class="wuliu-info">
-                                            <div>退款</div>
+                                            <div>查看</div>
                                         </div>
-                                    </a>
-
+                                </a>
+                                -->
                         </div>
                     </div>
                     <div id="tab4" class="tab">
-                        <div class="content-block">
-
-
+                        <div class="content-block" id="sent-transaction">
+                            <!--
                             <a href="my_order_detail.html" class="content-block order-list external">
                                     <div class="order-store">
                                         <div class="order-store-name"><i class="iconfont icon-dianpu"></i>鑫源泽数码专营店</div>
@@ -151,11 +157,10 @@
                                     </div>
                                     <div class="line"></div>
                                     <div class="wuliu-info">
-                                        <div>退款</div>
+                                        <div>查看</div>
                                     </div>
                                 </a>
-
-
+                                -->
                         </div>
                     </div>
                     </div>
@@ -174,4 +179,5 @@
 <script src="../../lib/dist/js/mescroll.min.js"></script>
 <script src="../../lib/jquery-3.3.1.js"></script>
 <script src="../../js/public.js"></script>
+<script src="../../js/my_order.js"></script>
 </html>

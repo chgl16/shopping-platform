@@ -41,23 +41,23 @@ public interface ApplyStoreMapper {
      * 根据申请表序号修改申请状态
      * 状态置为1-通过申请
      *
-     * @param pkId
+     * @param id
      */
-    public void updateStatusToAccept(int pkId);
+    public void updateStatusToAccept(int id);
 
     /**
      * 根据申请表序号修改申请状态
      * 状态置为0-通过拒绝
      *
-     * @param pkId
+     * @param id
      */
-    public void updateStatusToRefuse(int pkId);
+    public void updateStatusToRefuse(int id);
 
     /**
-     * 根据pkId获取这个申请
+     * 根据id获取这个申请
      *
-     * @param pkId
+     * @param id
      * @return applyStore
      */
-    public ApplyStore selectOneByPkId(int pkId);
+    public ApplyStore selectOneByPkId(int id);
 }

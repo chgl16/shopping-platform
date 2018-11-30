@@ -33,30 +33,39 @@
                 </div>
 
                 <div class="swiper-container swiper-container-index">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><a class="external swiper-wrapper-body" href=""><img src="../../img/loading.jpg" alt="图片加载失败"></a></div>
-                        <div class="swiper-slide"><a class="external swiper-wrapper-body" href=""><img src="../../img/loading.jpg" alt="图片加载失败"></a></div>
-                        <div class="swiper-slide"><a class="external swiper-wrapper-body" href=""><img src="../../img/loading.jpg" alt="图片加载失败"></a></div>
+                    <div class="swiper-wrapper" id="rotation-chart">
+                        <!--
+                        <div class="swiper-slide"><a class="external swiper-wrapper-body" href="#"><img id="rotation-img1" src="../../picture/book/default.jpg" alt="图片加载失败"></a></div>
+                        <div class="swiper-slide"><a class="external swiper-wrapper-body" href="#"><img id="rotation-img2" src="../../picture/book/default.jpg" alt="图片加载失败"></a></div>
+                        <div class="swiper-slide"><a class="external swiper-wrapper-body" href="#"><img id="rotation-img3" src="../../picture/book/default.jpg" alt="图片加载失败"></a></div>
+                        -->
                     </div>
                      <!-- 如果需要分页器 -->
                     <div class="swiper-pagination"></div>
                 </div>
                    
                 <div class="categories">
-                        <a class="external category" href="category_list.html" ><div class="category-img"><img src="../../img/loading.jpg" alt="failed" /></div><div class="category-name">图书类别</div></a>
-						<a class="external category" href="category_list.html" ><div class="category-img"><img src="../../img/loading.jpg" alt="failed" /></div><div class="category-name">图书类别</div></a>			
-						<a class="external category" href="category_list.html" ><div class="category-img"><img src="../../img/loading.jpg" alt="failed" /></div><div class="category-name">图书类别</div></a>
-						<a class="external category" href="category_list.html" ><div class="category-img"><img src="../../img/loading.jpg" alt="failed" /></div><div class="category-name">图书类别</div></a>
-						<a class="external category" href="category_list.html" ><div class="category-img"><img src="../../img/loading.jpg" alt="failed" /></div><div class="category-name">图书类别</div></a>
-						<a class="external category" href="category_list.html"><div class="category-img"><img src="../../img/loading.jpg" alt="failed" /></div><div class="category-name">图书类别</div></a>
-						<a class="external category" href="category_list.html" ><div class="category-img"><img src="../../img/loading.jpg" alt="failed" /></div><div class="category-name">图书类别</div></a>
+                        <div class="external category" onclick="getTypeCategoties('计算机类')"><div class="category-img"><img src="../../img/type/sc.jpg" alt="failed" /></div><div class="category-name">计算机类</div></div>
+						<div class="external category" onclick="getTypeCategoties('历史经典')"><div class="category-img"><img src="../../img/type/history.jpg" alt="failed" /></div><div class="category-name">历史经典</div></div>
+						<div class="external category" onclick="getTypeCategoties('文学之最')"><div class="category-img"><img src="../../img/type/literature.jpg" alt="failed" /></div><div class="category-name">文学之最</div></div>
+						<div class="external category" onclick="getTypeCategoties('艺术美学')"><div class="category-img"><img src="../../img/type/art.jpg" alt="failed" /></div><div class="category-name">艺术美学</div></div>
+						<div class="external category" onclick="getTypeCategoties('经管法类')"><div class="category-img"><img src="../../img/type/economy.jpg" alt="failed" /></div><div class="category-name">经管法类</div></div>
+						<div class="external category" onclick="getTypeCategoties('二手优惠')"><div class="category-img"><img src="../../img/type/second.jpg" alt="failed" /></div><div class="category-name">二手优惠</div></div>
+						<div class="external category" onclick="getTypeCategoties('工业天地')"><div class="category-img"><img src="../../img/type/industry.jpg" alt="failed" /></div><div class="category-name">工业天地</div></div>
+                        <div class="external category" onclick="getTypeCategoties('儿童读物')"><div class="category-img"><img src="../../img/type/children.jpg" alt="failed" /></div><div class="category-name">儿童读物</div></div>
+                        <div class="external category" onclick="getTypeCategoties('语言语法')"><div class="category-img"><img src="../../img/type/language.jpg" alt="failed" /></div><div class="category-name">语言语法</div></div>
+                        <div class="external category" onclick="getTypeCategoties('生活杂书')"><div class="category-img"><img src="../../img/type/life.jpg" alt="failed" /></div><div class="category-name">生活杂书</div></div>
                   </div>
 
 					 <div class="swiper-container swiper-container-list">
                     <div class="swiper-wrapper">
+                        <!-- 暂时置空留用 -->
+                        <div><a class="external swiper-wrapper-body" href="#"><img src="../../img/ad.jpg" alt="图片加载失败"></a></div>
+                        <!--
                         <div class="swiper-slide swiper-slide-list"><a class="external swiper-wrapper-body" href=""><img src="../../img/loading.jpg" alt="图片加载失败"></a></div>
                         <div class="swiper-slide swiper-slide-list"><a class="external swiper-wrapper-body" href=""><img src="../../img/loading.jpg" alt="图片加载失败"></a></div>
                         <div class="swiper-slide swiper-slide-list"><a class="external swiper-wrapper-body" href=""><img src="../../img/loading.jpg" alt="图片加载失败"></a></div>
+                        动态加载 -->
                     </div>
                      <!-- 如果需要分页器 -->
                         <div class="swiper-pagination"></div>
@@ -65,11 +74,11 @@
                     <!-- 分页展示推荐数据 -->
                     <div id="mescroll" class="mescroll">
                         <ul id="dataList" class="data-list categories categories-list recommend-list">
-                            <li><a class="external category-list" href="product_details.html" ><div class="category-list-img"><img src="../../img/loading.jpg" alt="failed" /><div class="category-name category-list-name">图书列表</div></div></a></li>
-                            <li><a class="external category-list" href="product_details.html" ><div class="category-list-img"><img src="../../img/loading.jpg" alt="failed" /><div class="category-name category-list-name">图书列表</div></div></a></li>
-                            <li><a class="external category-list" href="product_details.html" ><div class="category-list-img"><img src="../../img/loading.jpg" alt="failed" /><div class="category-name category-list-name">图书列表</div></div></a></li>
-                            <li><a class="external category-list" href="product_details.html" ><div class="category-list-img"><img src="../../img/loading.jpg" alt="failed" /><div class="category-name category-list-name">图书列表</div></div></a></li>
-                            <li><a class="external category-list" href="product_details.html" ><div class="category-list-img"><img src="../../img/loading.jpg" alt="failed" /><div class="category-name category-list-name">图书列表</div></div></a></li>
+                            <!--
+                            <li><a class="external category-list" onclick="goDetails(bookId)"><div class="category-list-img"><img src="../../img/loading.jpg" alt="failed" /><div class="category-name category-list-name">图书列表</div></div></a></li>
+                            <li><a class="external category-list" onclick="goDetails(bookId)"><div class="category-list-img"><img src="../../img/loading.jpg" alt="failed" /><div class="category-name category-list-name">图书列表</div></div></a></li>
+                            <li><a class="external category-list" onclick="goDetails(bookId)"><div class="category-list-img"><img src="../../img/loading.jpg" alt="failed" /><div class="category-name category-list-name">图书列表</div></div></a></li>
+                            动态生成 -->
                         </ul>
                     </div>
 
@@ -85,10 +94,13 @@
                             <i class="icon icon-home iconfont icon-shouye"></i>
                             <span class="tab-label">首页</span>
                         </a>
+                        <!-- 暂时不提供购物车业务
                         <a class="tab-item external" href="shopping_cart.html">
                             <i class="icon icon-home iconfont icon-gouwuche"></i>
                             <span class="tab-label">购物车</span>
+                            <!--
                             <span class="badge">2</span>
+                            -->
                         </a>
                         <a class="tab-item external" href="my_order.html">
                             <i class="icon icon-home iconfont icon-icon-"></i>
@@ -98,6 +110,10 @@
                             <i class="icon icon-home iconfont icon-gerenzhongxin"></i>
                             <span class="tab-label" >我的淘宝</span>
                         </a>
+                        <!-- chgl16添加
+                        动态添加我的店铺 -->
+
+
                       </nav>
                       <a href="#searchbar" class="external back-top"><i class="iconfont icon-fanhuidingbu"></i></a>
                 </div>
@@ -108,18 +124,18 @@
             <!-- Left Panel with Reveal effect -->
         <div class="panel panel-left panel-reveal theme-dark" id='panel-left-demo'>
             <div class="content-block user-info">
-                <div class="user-img"><img class="head-portrait" src="../../img/loading.jpg" alt="图片加载失败"></div>
+                <div class="user-img"><img class="head-portrait" src="../../picture/user/default.jpg" alt="图片加载失败"></div>
                 <p><div class="close-icon"><i class="iconfont icon-guanbi close-panel"></i></div></p>
             </div>
             <div class="list-block">
-                <div class="user-status"><span>你好，岁忧郁习惯了蓝</span></div>
-                <div class="user-status"><a  class="external user-login" href="login.html">登录</a><a class="external user-register" href="register.html">新用户注册</a></div>
+                <div class="user-status"><span>您尚未登录</span></div>
+                <div class="user-status"><a class="external user-login" href="login.html">登录</a><a class="external user-register" href="register.html">新用户注册</a></div>
                 <div class="info-list">
                     <a class="external list-item" href="index.html"><i class="iconfont icon-shouye open-panel"></i>首页</a>
                     <a class="external list-item" href="address.html"><i class="iconfont icon-dizhi open-panel"></i>收货地址</a>
                     <a class="external list-item" href="my_order.html"><i class="iconfont icon-icon- open-panel"></i>我的订单</a>
                     <a class="external list-item" href="shopping_cart.html"><i class="iconfont icon-gouwuche open-panel"></i>购物车</a>
-                    <a class="external list-item" href="#"><i class="iconfont icon-gerenzhongxin open-panel"></i>修改信息</a>
+                    <a class="external list-item" href="update_userinfo.html"><i class="iconfont icon-gerenzhongxin open-panel"></i>修改信息</a>
                     <a class="external list-item" href="login.html"><i class="iconfont icon-tuichu open-panel"></i>退出登录</a>
                 </div>
             </div>

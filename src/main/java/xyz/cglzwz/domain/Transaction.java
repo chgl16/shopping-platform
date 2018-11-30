@@ -12,9 +12,11 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Transaction {
-    private int pkId;
+    private int id;
+    private String orderId;
     private int bookId;
     private String bookName;
+    private String bookImgUrl;
     private int storeId;
     private String storeName;
     private int customerId;
@@ -25,30 +27,22 @@ public class Transaction {
     private byte status;
     private int logistics;
     private String time;
+    private String remark;
 
-    public String getTime() {
-        return time;
+    public int getId() {
+        return id;
     }
 
-    public void setTime(String time) {
-        this.time = time;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public double getPrice() {
-        return price;
+    public String getOrderId() {
+        return orderId;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
-
-    public int getPkId() {
-        return pkId;
-    }
-
-    public void setPkId(int pkId) {
-        this.pkId = pkId;
+    public void setOrderId(String orderId) {
+        this.orderId = orderId;
     }
 
     public int getBookId() {
@@ -115,6 +109,14 @@ public class Transaction {
         this.customerAddress = customerAddress;
     }
 
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
     public byte getStatus() {
         return status;
     }
@@ -131,11 +133,35 @@ public class Transaction {
         this.logistics = logistics;
     }
 
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
+    }
+
+    public String getRemark() {
+        return remark;
+    }
+
+    public void setRemark(String remark) {
+        this.remark = remark;
+    }
+
+    public String getBookImgUrl() {
+        return bookImgUrl;
+    }
+
+    public void setBookImgUrl(String bookImgUrl) {
+        this.bookImgUrl = bookImgUrl;
+    }
+
     @Override
     public String toString() {
-        return  "transaction: [pkId: " + pkId + ", storeId: " + storeId + ", storeName: " + storeName + ", bookId: "
-                + bookId + ", bookName: " + bookName + ", customerId: " + customerId + ", customerName: " + customerName
-                + ", customerPhone: " + customerPhone + ", customerAddress: " + customerAddress + ", price: " + price
-                + ", status: " + status + ", logistics: " + logistics + "]";
+        return "transaction: [id: " + id + ", orderId: " + orderId + ", storeId: " + storeId + ", storeName: " + storeName + ", bookId: "
+                + bookId + ", bookName: " + bookName + ", customerId: " + ", bookImgUrl: " + bookImgUrl + customerId + ", customerName: "
+                + customerName + ", customerPhone: " + customerPhone + ", customerAddress: " + customerAddress + ", price: " + price
+                + ", status: " + status + ", logistics: " + logistics + ", remark: " + remark + "]";
     }
 }

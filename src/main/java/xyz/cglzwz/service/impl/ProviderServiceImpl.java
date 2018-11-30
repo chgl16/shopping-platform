@@ -61,14 +61,14 @@ public class ProviderServiceImpl implements ProviderService {
     /**
      * 通过这个店铺申请
      *
-     * @param pkId
+     * @param id
      */
     @Override
     @Transactional
-    public void acceptApplication(int pkId) {
-        applyStoreMapper.updateStatusToAccept(pkId);
+    public void acceptApplication(int id) {
+        applyStoreMapper.updateStatusToAccept(id);
         // 获取改申请信息以便新建店铺和关系
-        ApplyStore applyStore = applyStoreMapper.selectOneByPkId(pkId);
+        ApplyStore applyStore = applyStoreMapper.selectOneByPkId(id);
         store.setName(applyStore.getStoreName());
         store.setIntroduction(applyStore.getStoreIntroduction());
         store.setFoundingTime(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
@@ -79,17 +79,17 @@ public class ProviderServiceImpl implements ProviderService {
         // 插入店铺店主关系
         storeOwnerMapper.insert(storeId, applyStore.getOwnerId());
 
-        log.info("通过了pkId=" + pkId + "的网店申请");
+        log.info("通过了id=" + id + "的网店申请");
     }
 
     /**
      * 拒绝这个店铺申请
      *
-     * @param pkId
+     * @param id
      */
     @Override
-    public void refuseApplication(int pkId) {
-        applyStoreMapper.updateStatusToRefuse(pkId);
-        log.info("拒绝了pkId=" + pkId + "的网店申请");
+    public void refuseApplication(int id) {
+        applyStoreMapper.updateStatusToRefuse(id);
+        log.info("拒绝了id=" + id + "的网店申请");
     }
 }

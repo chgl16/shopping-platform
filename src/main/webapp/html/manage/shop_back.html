@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>发布宝贝</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="../../css/backPublic.css">
+	<link rel="stylesheet" type="text/css" href="../../css/shop_back.css">
+</head>
+<body>
+	<div class="container">
+		<div class="left_box">
+			<div class="top_title">
+				<svg class="tree_icon" aria-hidden="true">
+	  				<use xlink:href="#icon-shu"></use>
+				</svg>
+				<span>BOOK_MALL</span>
+			</div>
+			<ul class="left_page">
+				<li>
+					<span class="left_page_item">
+						<svg class="li_icon" aria-hidden="true">
+	  						<use xlink:href="#icon-shangpin"></use>
+						</svg>
+						宝贝管理
+						<svg class="sanjiao_icon up" aria-hidden="true">
+	  						<use xlink:href="#icon-sanjiaoxinggengduo"></use>
+						</svg>
+					</span>
+					<ul class="sub_ul show">
+						<li><a href="shop_back.html" class="red">发布宝贝</a></li>
+						<li><a href="shop_selling.html">出售中的宝贝</a></li>
+						<li><a href="#">仓库中的宝贝</a></li>
+						<li><a href="#">历史宝贝</a></li>
+					</ul>
+				</li>
+				<li>
+					<span class="left_page_item">
+						<svg class="li_icon" aria-hidden="true">
+	  						<use xlink:href="#icon-icon1460188781620"></use>
+						</svg>
+						物流管理
+						<svg class="sanjiao_icon down" aria-hidden="true">
+	  						<use xlink:href="#icon-sanjiaoxinggengduo"></use>
+						</svg>
+					</span>
+					<ul class="sub_ul hidden">
+						<li><a href="shop_send.html">商家发货</a></li>
+						<li><a href="shop_sent.html">发货中的订单</a></li>
+					</ul>
+				</li>
+				<li>
+					<span class="left_page_item">
+						<svg class="li_icon" aria-hidden="true">
+	  						<use xlink:href="#icon-jiaoyi"></use>
+						</svg>
+						交易管理
+						<svg class="sanjiao_icon down" aria-hidden="true">
+	  						<use xlink:href="#icon-sanjiaoxinggengduo"></use>
+						</svg>
+					</span>
+					<ul class="sub_ul hidden">
+						<li><a href="#">已卖出的宝贝</a></li>
+					</ul>
+				</li>
+				<li>
+					<span class="left_page_item">
+						<svg class="li_icon" aria-hidden="true">
+	  						<use xlink:href="#icon-fuwu2"></use>
+						</svg>
+						客户服务
+						<svg class="sanjiao_icon  down" aria-hidden="true">
+	  						<use xlink:href="#icon-sanjiaoxinggengduo"></use>
+						</svg>
+					</span>
+					<ul class="sub_ul hidden">
+						<li><a href="#">退款管理</a></li>
+					</ul>
+				</li>
+				<li>
+					<span class="left_page_item">
+						<svg class="li_icon" aria-hidden="true">
+	  						<use xlink:href="#icon-shangjia"></use>
+						</svg>
+						店铺管理
+						<svg class="sanjiao_icon down" aria-hidden="true">
+	  						<use xlink:href="#icon-sanjiaoxinggengduo"></use>
+						</svg>
+					</span>
+					<ul class="sub_ul hidden">
+						<li><a href="shop_modifyMess.html">修改信息</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="right_box">
+			<div class="page_path">
+				<svg class="path_icon" aria-hidden="true">
+	  				<use xlink:href="#icon-lubiao"></use>
+				</svg>
+				当前位置：宝贝管理 > 发布宝贝
+			</div>
+			<form id="book_form" action="/addBook" enctype="multipart/form-data" method="post">
+				<!-- 提交店铺id -->
+				<input type="hidden" name="storeId">
+
+				<div class="input_box">
+					<span>书名</span><input type="text" name="title">
+					<div class="form_tips hidden"></div>
+				</div>
+
+				<div class="input_box">
+					<span>ISBN</span><input type="text" name="isbn">
+					<div class="form_tips hidden"></div>
+				</div>
+
+				<div class="input_box">
+					<span>图书类型</span><input type="text" name="type">
+					<div class="form_tips hidden"></div>
+				</div>
+				<div class="input_box">
+					<span>价格</span><input type="text" name="price" placeholder="请填入1~1000">
+					<div class="form_tips hidden"></div>
+				</div>
+				<div class="input_box">
+					<span>出版社</span><input type="text" name="publicationHouse">
+					<div class="form_tips hidden"></div>
+				</div>
+				<div class="input_box">
+					<span>出版时间</span><input type="text" name="publicationDate" id="timePlugin" readonly="readonly">
+					<div class="form_tips hidden"></div>
+				</div>
+				<div class="input_box">
+					<span>数量</span><input type="text" name="inventory" placeholder="请填入1~1000">
+					<div class="form_tips hidden"></div>
+				</div>
+				<div class="input_box">
+					<span>推荐到首页？</span><input type="text" name="recommend" placeholder="0:不推荐，1:推荐">
+					<div class="form_tips hidden"></div>
+				</div>
+				<div class="input_box">
+					<span>推荐到本店？</span><input type="text" name="show" placeholder="0:不推荐，1:推荐">
+					<div class="form_tips hidden"></div>
+				</div>
+				<div class="input_box text_box">
+					<span>图书描述</span><textarea name="introduction"></textarea>
+					<div class="form_tips hidden"></div>		
+				</div>
+				<div class="img_input_con">
+					<div class="img_box">
+						<div class="img_text">
+							<span>+</span>
+							<span>添加图片</span>
+						</div>
+						<input type="file" name="image" accept="image/png,image/jpeg,image/gif,image/jpg">
+						<img src="../../img/manage/1.jpg" class="hidden put_img">
+						<span class="img_tip hidden">至少添加一张图片</span>
+					</div>
+					<div class="img_box hidden">
+						<div class="img_text">
+							<span>+</span>
+							<span>添加图片</span>
+						</div>
+						<input type="file" name="image" accept="image/png,image/jpeg,image/gif,image/jpg">
+						<img src="#" class="hidden put_img">
+					</div>	
+					<div class="img_box hidden">
+						<div class="img_text">
+							<span>+</span>
+							<span>添加图片</span>
+						</div>
+						<input type="file" name="image" accept="image/png,image/jpeg,image/gif,image/jpg">
+						<img src="#" class="hidden put_img">
+					</div>
+					<div class="img_box hidden">
+						<div class="img_text">
+							<span>+</span>
+							<span>添加图片</span>
+						</div>
+						<input type="file" name="image" accept="image/png,image/jpeg,image/gif,image/jpg">
+						<img src="#" class="hidden put_img">
+					</div>
+					<div class="img_box hidden">
+						<div class="img_text">
+							<span>+</span>
+							<span>添加图片</span>
+						</div>
+						<input type="file" name="image" accept="image/png,image/jpeg,image/gif,image/jpg">
+						<img src="#" class="hidden put_img">
+					</div>
+				</div>
+				<input type="submit" class="form_btn" value="发布">
+				<input type="reset" class="form_btn" value="重置">
+				<!--<div class="form_btn">发布</div>-->
+			</form>	
+		</div>
+	</div>
+
+
+
+</body>
+
+<script src="../../lib/layDate-v5.0.9/laydate/laydate.js"></script>
+<script src="../../js/iconfont.js"></script>
+<script src="../../js/backPublic.js"></script>
+<script src="../../js/shop_back.js"></script>
+<script src="../../lib/jquery-3.3.1.js"></script>
+<script src="../../lib/jquery-form.js"></script>
+<!-- 添加一个处理数据的js -->
+<script src="../../js/shop_back_data.js"></script>
+
+</html>

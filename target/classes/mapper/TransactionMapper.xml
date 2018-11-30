@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace表示对应的接口类 -->
+<mapper namespace="xyz.cglzwz.dao.TransactionMapper">
+    <insert id="insertTransaction" parameterType="transaction">
+        INSERT INTO tb_transaction(order_id, book_id, book_name, store_id, store_name, customer_id,
+              customer_name, customer_phone, customer_address, price, time, remark, book_img_url)
+              VALUES (#{orderId}, #{bookId}, #{bookName}, #{storeId}, #{storeName}, #{customerId},
+              #{customerName}, #{customerPhone}, #{customerAddress}, #{price}, #{time}, #{remark}, #{bookImgUrl})
+    </insert>
+
+    <insert id="insertStoreTransactionRelation" parameterType="storeTransactionRelation">
+        <!-- 获取到的最新修改id添加到storeTransactionRelation的transactionId上 -->
+        <selectKey resultType="integer" keyProperty="transactionId" order="BEFORE">
+            SELECT LAST_INSERT_ID() AS  transactionId
+        </selectKey>
+        INSERT INTO tb_store_transaction VALUES (#{storeId}, #{transactionId})
+    </insert>
+
+    <insert id="insertCustomerTransactionRelation" parameterType="customerTransactionRelation">
+        <!-- 获取到的最新修改id添加到customerTransactionRelation的transactionId上 -->
+        <selectKey resultType="integer" keyProperty="transactionId" order="BEFORE">
+            SELECT LAST_INSERT_ID() AS  transactionId
+        </selectKey>
+        INSERT INTO tb_customer_transaction VALUES (#{customerId}, #{transactionId})
+    </insert>
+
+    <select id="selectTransaction" parameterType="int" resultMap="xyz.cglzwz.dao.Common.transactionResultMap">
+        SELECT * FROM tb_transaction WHERE pk_id = #{transactionId}
+    </select>
+
+    <select id="selectCustomerAllTransaction" parameterType="int" resultMap="xyz.cglzwz.dao.Common.transactionResultMap">
+          SELECT * FROM tb_transaction WHERE pk_id
+              IN (SELECT transaction_id FROM tb_customer_transaction WHERE tb_customer_transaction.customer_id = #{customerId})
+    </select>
+
+    <select id="selectStoreAllTransaction" parameterType="int" resultMap="xyz.cglzwz.dao.Common.transactionResultMap">
+          SELECT * FROM tb_transaction WHERE pk_id
+              IN (SELECT transaction_id FROM tb_store_transaction WHERE tb_store_transaction.store_id = #{storeId})
+    </select>
+
+    <select id="selectAllTransaction" resultMap="xyz.cglzwz.dao.Common.transactionResultMap">
+          SELECT * FROM tb_transaction
+    </select>
+
+    <select id="selectStoreUnsentTransaction" parameterType="int" resultMap="xyz.cglzwz.dao.Common.transactionResultMap">
+        SELECT * FROM tb_transaction WHERE store_id = #{storeId} AND status = -1
+    </select>
+
+    <select id="selectStoreUnfinishedTransaction" parameterType="int" resultMap="xyz.cglzwz.dao.Common.transactionResultMap">
+        SELECT * FROM tb_transaction WHERE store_id = #{storeId} AND status = 1
+    </select>
+
+    <update id="updateStatusToSend" parameterType="int">
+        UPDATE tb_transaction SET status = 1 WHERE pk_id = #{transactionId}
+    </update>
+
+</mapper>

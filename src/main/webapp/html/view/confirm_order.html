@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>确认订单</title>
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+    <link rel="stylesheet" type="text/css" href="../../font/iconfont.css">
+    <link rel="stylesheet" href="../../lib/dist/css/mescroll.min.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <!-- <link rel="stylesheet" href="../../css/mescroll.css"> -->
+</head>
+<body>
+    <!-- <h2>【确认订单】-> 【付款到支付宝】-> 【确认收货】-> 【完成购物】</h2>
+    <h4>当前阶段：【确认订单】</h4>
+    <hr> -->
+    <div class="page-group">
+        <div class="page page-current">
+    
+            <header class="bar bar-nav">
+                <a href="index.html" class="icon icon-left pull-left external"></a>
+                <h1 class='title'>确认订单</h1>
+            </header>
+            <div class="content">
+                <div class="user-info-detail" id="contact_message">
+                        <div class="address-incon"><i class="iconfont icon-dizhi"></i></div>
+                    <div>
+                        <div class="user-name"><span id="username"></span><span class="user-phone" id="contact_phone"></span></div>
+                        <div class="user-address" id="contact_address"></div>
+                    </div>
+                </div>
+
+    <!-- <div id="contact_message">
+        <h2>您的收货信息:</h2>
+        收货人: <span id="username">某某某</span><br>
+        收货电话: <span id="contact_phone">185223245689</span><br>
+        收货地址: <span id="contact_address">广州市xx区xxxxxx</span>
+    </div> -->
+
+    <div class="order-product" id="order_message">
+            <img  class="order-product-img" id="book_img" src="../../picture/book/default.jpg" alt="">
+            <div class="order-product-main"> 
+                <div class="order-product-content" id="book_title"></div>
+                <div class="order-product-price-info">
+                    <div class="order-product-price" id="book_price">￥25.00</div>
+                </div>
+            </div>
+        </div>
+    <hr>
+    <!-- <div id="order_message">
+        <h2>确定订单信息:</h2>
+        <table>
+            <thead>
+                <th></th>
+                <th>商品名字</th>
+                <th>商品类型</th>
+                <th>价格</th>
+                <th>运费</th>
+                <th>小计</th>
+            </thead>
+            <tbody>
+                <td id="book_img"><img src="../../picture/book/default.jpg" width="50%"></td>
+                <td id="book_title">正版Spring</td>
+                <td id="book_type">计算机类</td>
+                <td id="book_price">119.99</td>
+                <td>0</td>
+                <td id="total_price">119.99</td>
+            </tbody>
+        </table>
+    </div>
+    <hr> -->
+    <div class="confirm">
+        <div class="confirm-input" id="remark">
+                <!-- <div class="register-icon"><i class="iconfont icon-xiugai"></i></div> -->
+                <input type="text" name="remark" autocomplete="off" placeholder="给店家备注...">
+            </div>
+            
+        
+            <div class="confirm-input confirm-btn" id="submit_order">
+                <button onclick="submitOrder()">提交订单</button>
+            </div>
+    </div>
+    
+    <!-- 用户备注 -->
+    <!-- <div id="remark">
+        <input type="text" name="remark" placeholder="给店家备注...">
+    </div> -->
+    <!-- <hr> -->
+    <!-- <div id="submit_order">
+        <button onclick="submitOrder()">提交订单</button>
+    </div> -->
+
+    <!-- 以下是提交的订单信息 -->
+    <!--
+    <form  action="/payTrade" method="post" style="display: none;">
+        <input type="submit" value="submit" style="display:none" >
+    </form>
+    -->
+        </div>
+    </div>
+</div>
+</body>
+<script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+<script src="../../lib/jquery-3.3.1.js"></script>
+<script src="../../lib/jquery-form.js"></script>
+<script src="../../js/confirm_order.js"></script>
+</html>

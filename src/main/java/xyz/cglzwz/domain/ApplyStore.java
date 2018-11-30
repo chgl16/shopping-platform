@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class ApplyStore {
-    private int pkId;
+    private int id;
     private int ownerId;
     private String storeName;
     private String storeIntroduction;
@@ -22,12 +22,12 @@ public class ApplyStore {
      */
     private byte status;
 
-    public int getPkId() {
-        return pkId;
+    public int getId() {
+        return id;
     }
 
-    public void setPkId(int pkId) {
-        this.pkId = pkId;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getOwnerId() {
@@ -72,7 +72,7 @@ public class ApplyStore {
 
     @Override
     public String toString() {
-        return "applyStore: [pkId: " + pkId + ", ownerId: " + ownerId + ", storeName: " + storeName + ", storeIntroduction: "
+        return "applyStore: [id: " + id + ", ownerId: " + ownerId + ", storeName: " + storeName + ", storeIntroduction: "
                 + storeIntroduction + ", applyTime: " + applyTime + ", status: " + status + "]";
     }
 }

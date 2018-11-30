@@ -67,6 +67,6 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void updateUserInfo(Userinfo userinfo) {
-
+        userMapper.updateUserinfoById(userinfo);
     }
 }

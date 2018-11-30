@@ -8,7 +8,10 @@ import xyz.cglzwz.domain.Book;
 import xyz.cglzwz.domain.Store;
 import xyz.cglzwz.service.VistorService;
 
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * 顾客查书业务
@@ -35,6 +38,12 @@ public class VistorServiceImpl implements VistorService {
         return vistorBookMapper.selectBookByKeyword(keyword);
     }
 
+    /**
+     * 按类型获取书的集合
+     *
+     * @param type
+     * @return
+     */
     @Override
     public List<Book> getBookByType(String type) {
         return vistorBookMapper.selectBookByType(type);
@@ -68,5 +77,32 @@ public class VistorServiceImpl implements VistorService {
     @Override
     public List<Store> getAllStore() {
         return vistorBookMapper.selectAllStore();
+    }
+
+    /**
+     * 通过书id获取书和其店铺
+     * @param bookId
+     * @return
+     */
+    @Override
+    public List<Object> getBookAndStore(int bookId) {
+        Book book = vistorBookMapper.getBook(bookId);
+        Store store = vistorBookMapper.getStore(bookId);
+        List<Object> list = new ArrayList<Object>();
+        list.add(book);
+        list.add(store);
+        log.info("书的信息：" + book.toString());
+        log.info("店的信息: " + store.toString());
+        return list;
+    }
+
+    /**
+     * 通过店铺id获取店铺信息
+     *
+     * @param bookId
+     * @return
+     */
+    public Store getStoreByBookId(int bookId) {
+        return vistorBookMapper.getStore(bookId);
     }
 }

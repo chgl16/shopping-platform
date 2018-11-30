@@ -1,0 +1,32 @@
+/*.order_table{
+	width:96%;
+	margin:0px auto;
+	border-collapse: collapse;
+	font-size:0.7rem;
+	text-align: center;
+}*/
+.td_book{
+	text-align: left;
+	color:red;
+}
+.order_id{
+
+}
+.order_books{
+
+}
+.order_shop{
+
+}
+.order_price{
+
+}
+.order_time{
+
+}
+.order_status{
+
+}
+.order_handle{
+	
+}

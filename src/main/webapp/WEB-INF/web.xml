@@ -65,15 +65,13 @@
         </init-param>
         <load-on-startup>1</load-on-startup><!--是启动顺序，让这个Servlet随Servletp容器一起启动。-->
 
-       <multipart-config>
-            <!--临时文件的目录-->
-            <location>/home/lin/</location>
-            <!-- 上传文件最大2M -->
+        <!-- 改为了CommonsMultipartResolver
+        <multipart-config>
+            <location>C:\</location>
             <max-file-size>2097152</max-file-size>
-            <!-- 上传文件整个请求不超过4M -->
             <max-request-size>4194304</max-request-size>
         </multipart-config>
-
+        -->
     </servlet>
 
     <servlet-mapping>

@@ -1,0 +1,260 @@
+html,body{
+	position:relative;
+}
+.mask{
+	position: fixed;
+	z-index:2;
+	top:0px;
+	right:0px;
+	bottom:0px;
+	left:0px;
+	background: rgba(0,0,0,0.7)
+}
+.pop_up{
+	position:fixed;
+	z-index:99;
+	width:20rem;
+	height:8.5rem;
+	/*height:auto;*/
+	top:0px;
+	right:0px;
+	bottom:0px;
+	left:0px;
+	margin:auto;
+	font-size:0.8rem;
+	background:pink;
+	border-radius: 0.2rem;
+	overflow:hidden;
+}
+.pop_up>.tips_text{
+	display: block;
+	width:100%;
+	height:5.5rem;
+	text-align: center;
+	line-height: 5.5rem;
+	color:#8f9cb5;
+	background: #fff;
+}
+.pop_up>.pop_up_btn{
+	width:100%;
+	font-size: 0px;
+	height:3rem;
+}
+.yes_btn,.no_btn{
+	display: inline-block;
+	width:50%;
+	height:100%;
+	font-size:0.8rem;
+	line-height: 3rem;
+	text-align: center;
+	color:#fff;
+	cursor:pointer;
+}
+.yes_btn{
+	background: #fc7169;
+}
+.no_btn{
+	background: #b6bece;
+}
+.pop_up .icon_cancel {
+	position:absolute;
+	top:1rem;
+	right:1rem;
+   	width: 1.5em; 
+   	height: 1.5em;
+   	vertical-align: -0.15em;
+   	fill: currentColor;
+   	overflow: hidden;
+   	cursor:pointer;
+}
+.top_text{
+	width:96%;
+	/*box-sizing: border-box;*/
+	margin:0rem auto;
+	font-size: 0.7rem;
+	color:#000;
+	font-weight:600;
+	border-bottom: 0.1rem solid rgb(92,152,210);
+}
+.paging_btn{
+	width:50%;
+	margin:1rem auto;
+	font-size:0.7rem;
+}
+.pre_page,.next_page{
+	display: inline-block;
+	width:3.5rem;
+	height:1.5rem;
+	line-height: 1.5rem;
+	text-align:center;
+	border:solid 1px #ededed;
+	color:#3e3e3e;
+	cursor: pointer;
+}
+.pre_page:hover,.next_page:hover,.sure_btn:hover{
+	border:solid 1px #095f8a;
+	color:#095f8a;
+}
+.count_page{
+	margin-left:1rem;
+	margin-right:1rem;
+	display: inline-block;
+}
+.sure_btn{
+	display: inline-block;
+	width:2.3rem;
+	height:1rem;
+	line-height: 1rem;
+	text-align:center;
+	border:solid 1px #ededed;
+	color:#3e3e3e;
+	cursor: pointer;
+}
+.paging_inp{
+	width:1.3rem;
+}
+.batch_box{
+	width:96%;
+	box-sizing: border-box;
+	padding-left:0.6rem;
+	margin:0rem auto;
+	margin-top:0.5rem;
+	font-size: 0.7rem;
+}
+.all_send_btn{
+	display: inline-block;
+	width:4.4rem;
+	height:1.4rem;
+	margin-left:0.3rem;
+	color:#fff;
+	line-height: 1.4rem;
+	text-align: center;
+	background:#095f8a;
+	border-radius: 0.15rem;
+	cursor: pointer;
+}
+.all_send_btn:hover{
+	background: #339cd1;
+}
+.order_list{
+	width:96%;
+	margin:0px auto;
+	color:rgb(64,64,64);
+	
+}
+.order_li{
+	width:100%;
+	/*height:9rem;*/
+	margin-top:0.5rem;
+	border:1px solid rgb(187,187,187);
+	/*background: lightblue;*/
+}
+.order_li:hover{
+	background:#eee;
+}
+.order_li_top{
+	width:100%;
+	height:2rem;
+	box-sizing: border-box;
+	padding:0px 0.6rem;
+	font-size: 0.7rem;
+	line-height: 2rem;
+	background: #7e97a4;	
+	border-bottom:1px solid rgb(187,187,187);
+}
+.order_li_top>input{
+	vertical-align: middle;
+}
+.order_li_top>span{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right:0.6rem;
+	color:#fff;
+}
+.send_btn{
+	float:right;
+	width:3rem;
+	height:1.4rem;
+	margin-top:0.3rem;
+	font-size: 0.7rem;
+	color:#fff;
+	line-height: 1.4rem;
+	text-align: center;
+	border-radius: 0.15rem;
+	background: #095f8a;
+}
+.send_btn:hover{
+	background:#339cd1;
+	cursor: pointer;
+}
+
+.order_li_con{
+	width:100%;
+	height:6rem;
+	box-sizing: border-box;
+	font-size:0px;
+	border-bottom:1px solid rgb(187,187,187);
+}
+.order_li_con_left{
+	display: inline-block;
+	width:50%;
+	height:100%;
+	box-sizing: border-box;
+	padding:0.6rem;
+	border-right:1px solid rgb(187,187,187);
+	font-size:0.7rem;
+}
+.order_li_con_left>img{
+	display: inline-block;
+	vertical-align: top;
+	width:2.5rem;
+	height:2.5rem;
+}
+.li_con_detail{
+	display: inline-block;
+	width:16rem;
+	height:100%;
+}
+.li_con_detail>p{
+	height:2rem;
+	overflow:hidden;
+	color:rgb(51,102,204);
+}
+.li_con_detail>span{
+	display: block;
+}
+.li_con_detail>em{
+	display: block;
+	width:100%;
+	font-style: normal;
+	text-align: right;
+
+}
+.order_li_con_right{
+	vertical-align: top;
+	display: inline-block;
+	width:50%;
+	height:100%;
+	box-sizing: border-box;
+	padding:0.6rem;
+	font-size:0.7rem;
+}
+.order_li_con_right>div{
+	width:100%;
+	margin-top:0.3rem;
+}
+.order_li_con_right span{
+	vertical-align: top;
+	display: inline-block;
+	width:4rem;
+
+}
+.order_li_con_right p{
+	display: inline-block;
+	width:18rem;
+	vertical-align: top;
+}
+.order_li_con_right .adress{
+	height:2rem;
+	overflow:hidden;
+}

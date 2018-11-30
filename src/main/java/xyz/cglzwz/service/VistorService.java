@@ -4,6 +4,7 @@ import xyz.cglzwz.domain.Book;
 import xyz.cglzwz.domain.Store;
 
 import java.util.List;
+import java.util.Set;
 
 /**
  * 访客基本权限业务
@@ -83,4 +84,20 @@ public interface VistorService {
      * @return
      */
     public List<Store> getAllStore();
+
+    /**
+     * 通过书id获取店铺和书
+     *
+     * @param bookId
+     * @return
+     */
+    public List<Object> getBookAndStore(int bookId);
+
+    /**
+     * 通过店铺id获取店铺信息
+     *
+     * @param bookId
+     * @return
+     */
+    public Store getStoreByBookId(int bookId);
 }

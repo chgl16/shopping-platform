@@ -31,9 +31,8 @@ function loginAjax(){
         contentType: "application/x-www-form-urlencoded;charset=utf-8",
         data: {"phone": phone, "password": password},
         success: function(data) {
-            var str = JSON.stringify(data);
-            console.info("dataStr: " + str);
-            if (str == "false") {
+            console.info("data: " + data);
+            if (data == "false") {
                 console.info("登录失败");
                 alert("登录失败，密码错误或者未注册 ...");
                 // 还是以html的位置为基准，不是js
@@ -43,9 +42,11 @@ function loginAjax(){
                 // 保存数据
                 localStorage.setItem('userId', data.id);
                 localStorage.setItem('phone', data.phone);
-                localStorage.setItem('roleType', data.roleType);
                 localStorage.setItem('username', data.username);
+                localStorage.setItem('roleType', data.roleType);
                 localStorage.setItem('userImgUrl', data.imgUrl);
+                localStorage.setItem('userContactPhone', data.contactPhone);
+                localStorage.setItem('userContactAddress', data.contactAddress);
                 window.location.href = "index.html";
             }
         },

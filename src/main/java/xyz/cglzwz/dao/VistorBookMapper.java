@@ -6,6 +6,7 @@ import xyz.cglzwz.domain.Book;
 import xyz.cglzwz.domain.Store;
 
 import java.util.List;
+import java.util.Set;
 
 /**
  * 访客对书的操作映射器接口
@@ -86,4 +87,18 @@ public interface VistorBookMapper {
      * @return
      */
     public List<Store> selectAllStore();
+
+    /**
+     * 通过id获取书
+     * @param bookId
+     * @return
+     */
+    public Book getBook(int bookId);
+
+    /**
+     * 通过书id获取店铺
+     * @param bookId
+     * @return
+     */
+    public Store getStore(int bookId);
 }

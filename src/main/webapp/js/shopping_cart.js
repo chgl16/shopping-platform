@@ -13,3 +13,15 @@ function b(nowVal) {
         $("#inputVal").val(1);
     }
 }
+
+window.onload = function (ev) {
+    alert("尚未开放，抱歉！");
+    window.location.href = "index.html";
+    /*
+    // 用户未登录
+    if (localStorage.getItem("userId") == null) {
+        alert("抱歉，你尚未登录");
+        window.location.href = "login.html";
+    }
+    */
+}

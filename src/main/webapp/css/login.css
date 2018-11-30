@@ -109,6 +109,18 @@ input[type="radio"] {
     line-height: 2rem;
 }
 
+.select-img{
+    width: 3rem;
+}
+.head-img{
+    width: 5rem;
+    height: 5rem;
+    border:1px #fff solid;
+}
+.head-img img{
+    height: 100%;
+    width: 100%;
+}
 
 @media (min-width: 500px) {
 

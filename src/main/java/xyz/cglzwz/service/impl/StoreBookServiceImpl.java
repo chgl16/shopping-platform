@@ -56,7 +56,7 @@ public class StoreBookServiceImpl implements StoreBookService {
     @Override
     public void updateBook(Book book) {
         storeBookMapper.updateBook(book);
-        log.info("成功修改了id = " + book.getPkId() + "的书的信息");
+        log.info("成功修改了id = " + book.getId() + "的书的信息");
     }
 
     /**
@@ -76,7 +76,7 @@ public class StoreBookServiceImpl implements StoreBookService {
     }
 
     /**
-     * 获取一定数量推荐到网站首页轮播显示的书
+     * 获取一定数量推荐到网站首页显示的书
      *
      * @param limit
      * @return

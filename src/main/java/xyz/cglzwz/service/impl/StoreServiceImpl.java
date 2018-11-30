@@ -38,17 +38,27 @@ public class StoreServiceImpl implements StoreService {
     /**
      * 申请店铺
      *
-     * @param userId
+     * @param ownerId
      * @param storeName
      * @param storeIntroduction
      */
     @Override
-    public void applyStore(int userId, String storeName, String storeIntroduction) {
-        applyStore.setOwnerId(userId);
+    public void applyStore(int ownerId, String storeName, String storeIntroduction) {
+        applyStore.setOwnerId(ownerId);
         applyStore.setStoreName(storeName);
         applyStore.setStoreIntroduction(storeIntroduction);
         applyStore.setApplyTime(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
         applyStoreMapper.insertNewApply(applyStore);
+    }
+
+    /**
+     * 通过店铺id 获取店铺
+     *
+     * @param storeId
+     * @return
+     */
+    public Store getStore(int storeId) {
+        return storeMapper.selectStoreById(storeId);
     }
 
     /**

@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="db_shopping_platform@localhost" uuid="97c89b60-51d4-45d8-93b5-90f3cc270bac">
+    <data-source source="LOCAL" name="db_shopping_platform@localhost [2]" uuid="8a8d1f8f-20dd-46f3-8d91-34d6adc881cf">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
-      <remarks>本地MySQL</remarks>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/db_shopping_platform</jdbc-url>
       <driver-properties>

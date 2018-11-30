@@ -14,14 +14,23 @@ import java.util.List;
  */
 
 public interface StoreService {
+
+    /**
+     * 通过id 获取店铺
+     *
+     * @param storeId
+     * @return
+     */
+    public Store getStore(int storeId);
+
     /**
      * 用户申请开店，提交用户id，店铺名字和介绍
      *
-     * @param userId
+     * @param ownerId
      * @param storeName
      * @param storeIntroduction
      */
-    public void applyStore(int userId, String storeName, String storeIntroduction);
+    public void applyStore(int ownerId, String storeName, String storeIntroduction);
 
     /**
      * 更新店铺信息

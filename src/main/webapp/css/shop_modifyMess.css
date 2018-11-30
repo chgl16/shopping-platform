@@ -1,0 +1,76 @@
+#shop_form{
+	width:100%;
+	font-size:0.7rem;
+}
+.img_input_box{
+	position:relative;
+	width:4rem;
+	height:4rem;
+	margin:0px auto;
+	margin-top:1rem;
+	border-radius: 50% 50%;
+	overflow:hidden;
+}
+.img_input_box input{
+	position:absolute;
+	z-index:3;
+	width:100%;
+	height:100%;
+	opacity: 0;
+}
+.img_input_box img{
+	position:absolute;
+	z-index:2;
+	width:100%;
+	height:100%;
+}
+.input_box{
+	position:relative;
+	width:14.7rem;
+	height:2rem;
+	margin:0px auto;
+	margin-top:1rem;
+	font-size:0.7rem;
+}
+.textarea_box{
+	width:14.7rem;
+	margin:0px auto;
+	margin-top:1rem;
+}
+.input_box>span,.textarea_box>span{
+	display:inline-block;
+	width:3.3rem;	
+}
+.input_box>input{
+	display:inline-block;
+	width:11rem;
+	height:1.8rem;
+	padding-left: 0.2rem;
+	border-radius:  0.1rem;
+	border: 1px solid #dcdcdc;
+}
+.shop_desc{
+	width:11rem;
+	height:4.8rem;
+	padding-left:0.2rem;
+	vertical-align: top;
+	resize:none;
+	border: 1px solid #dcdcdc;
+}
+.post_btn{
+	width:14.5rem;
+	height:2rem;
+	margin:0px auto;
+	margin-top:0.5rem;
+	font-size:0.7rem;
+	line-height:2rem;
+	background: #57c8f2;
+	color:#fff;
+	text-align: center;
+	border-radius: 0.15rem;
+	cursor:pointer;
+
+}
+.post_btn:hover{
+	background:#00baff;
+}

@@ -28,11 +28,16 @@
                             <!-- <a class="searchbar-cancel">取消</a> -->
                             <div class="search-input">
                                 <select class="dropdown-menu">
-                                    <option value=""  role="presentation">宝贝</option>
-                                    <option value=""  role="presentation">店铺</option>
+                                    <option value="title" role="presentation">书名</option>
+                                    <option value="type" role="presentation">类别</option>
+                                    <option value="range" role="presentation">价格范围</option>
+                                    <!-- 选择无法触发点击事件，就先算数
+                                    <option value="asc" role="presentation" onclick="changeToAsc()">价格升序</option>
+                                    <option value="desc" role="presentation">价格降序</option>
+                                    -->
                                 </select>
-                                <input type="search" id='search' placeholder='输入关键字...'/>
-                                <div class="search-icon"><i class="iconfont icon-sousuo"></i></div>
+                                <input type="search" id='search' placeholder='输入关键字...(如范围:0-50)'/>
+                                <div class="search-icon" onclick="goSearch()"><i class="iconfont icon-sousuo"></i></div>
                             </div>
                         </div>
                     <!-- </div> -->
@@ -42,10 +47,12 @@
                         
                     <div id="mescroll" class="mescroll search-list">
                         <ul id="dataList" class="data-list">
+                            <!--
                             <li><a class="list-item external"><img class="p-pic" src="../../img/loading.jpg"><div class="d"><h3 class="d-title">逸阳2018冬季新款高腰显瘦打底裤女小脚铅笔</h3><div class="d-price">¥159</div><div class="d-main"><div class="d-freight">免运费</div><div class="d-num">6444人付款</div><div class="d-area">郑州</div></div></div></a></li>
                             <li><a class="list-item external"><img class="p-pic" src="../../img/loading.jpg"><div class="d"><h3 class="d-title">逸阳2018冬季新款高腰显瘦打底裤女小脚铅笔</h3><div class="d-price">¥159</div><div class="d-main"><div class="d-freight">免运费</div><div class="d-num">6444人付款</div><div class="d-area">郑州</div></div></div></a></li>
                             <li><a class="list-item external"><img class="p-pic" src="../../img/loading.jpg"><div class="d"><h3 class="d-title">逸阳2018冬季新款高腰显瘦打底裤女小脚铅笔</h3><div class="d-price">¥159</div><div class="d-main"><div class="d-freight">免运费</div><div class="d-num">6444人付款</div><div class="d-area">郑州</div></div></div></a></li>
                             <li><a class="list-item external"><img class="p-pic" src="../../img/loading.jpg"><div class="d"><h3 class="d-title">逸阳2018冬季新款高腰显瘦打底裤女小脚铅笔</h3><div class="d-price">¥159</div><div class="d-main"><div class="d-freight">免运费</div><div class="d-num">6444人付款</div><div class="d-area">郑州</div></div></div></a></li>
+                            动态显示 -->
                         </ul>
                     </div>
                 
@@ -65,4 +72,5 @@
 <script src="../../lib/dist/js/mescroll.min.js"></script>
 <script src="../../lib/jquery-3.3.1.js"></script>
 <script src="../../js/public.js"></script>
+<script src="../../js/search.js"></script>
 </html>

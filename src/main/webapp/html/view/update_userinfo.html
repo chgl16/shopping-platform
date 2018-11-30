@@ -3,38 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <title>修改信息</title>
-    <script type="text/javascript" src="../../lib/jquery-3.3.1.js"></script>
-    <script type="text/javascript" src="../../lib/jquery-form.js"></script>
-    <script type="text/javascript" src="../../js/update_userinfo.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../../font/iconfont.css">
+    <link rel="stylesheet" href="../../css/login.css">
 </head>
 <body>
-    <h2>修改个人信息</h2>
-    <form id="form1" action="/shop/updateUserinfo" enctype="multipart/form-data" method="post">
+    <div class="register">
+        <div class="register-title">修改个人信息</div>
+        <form id="form1" action="/updateUserinfo" enctype="multipart/form-data" method="post">
         <table>
             <tr>
+                <td>
+                    <input type="hidden" id="userId" name="id"/>
+                </td>
+            </tr> 
+        </table>
+            <div class="register-input">
+                <div class="register-icon"><i class="iconfont icon-xingmingyonghumingnicheng"></i></div>
+                <input  id="username" name="username" autocomplete="off"  placeholder="昵称">
+            </div>
+            <div class="check-tip"></div>
+            <!-- <tr>
                 <td>昵称：</td>
-                <td><input type="text" name="username"/></td>
-            </tr>
-            <tr>
+                <td><input type="text" id="username" name="username"/></td>
+            </tr> -->
+            <!-- <tr>
                 <td>收货手机号:</td>
-                <td><input type="text" name="contactPhone"/></td>
-            </tr>
-            <tr>
+                <td><input type="text" id="contactPhone" name="contactPhone"/></td>
+            </tr> -->
+            <div class="register-input">
+                <div class="register-icon"><i class="iconfont icon-shoujihaoma"></i></div>
+                <input maxlength="11"  id="contactPhone" name="contactPhone" autocomplete="off"  placeholder="收货手机号">
+            </div>
+            <div class="check-tip"></div>
+            <!-- <tr>
                 <td>收货地址:</td>
-                <td><input type="text" name="contactAddress"/></td>
-            </tr>
-            <tr>
+                <td><input type="text" id="contactAddress" name="contactAddress"/></td>
+            </tr> -->
+            <div class="register-input">
+                <div class="register-icon"><i class="iconfont icon-dizhi"></i></div>
+                <input  id="contactAddress" name="contactAddress" autocomplete="off"  placeholder="收货地址">
+            </div>
+            <div class="check-tip" ></div>
+            
+            <!-- <tr>
                 <td>请选择头像:</td>
                 <td><input type="file" name="image" onchange="previewFile()"/></td>
-            </tr>
-            <tr>
+            </tr> -->
+            <div class="register-input">
+                <div class="select-img">头像</div>
+                <input type="file" name="image" onchange="previewFile()"/>
+
+            </div>
+            <div class="check-tip"></div>
+            <!-- <tr>
                 <img src="" height="100" width="200" alt="这是略缩图..."/>
-            </tr>
-            <tr>
+            </tr> -->
+            <div class="head-img"> <img src=""  alt="略缩图"/></div>
+            <div class="check-tip"></div>
+            <div class="register-input">
+                    <input type="submit" name="submit" value="提交"/>
+                </div>
+            <!-- <tr>
                 <td><input type="submit" name="submit" value="提交"/></td>
                 <td><input type="reset" name="reset" value="重置"/></td>
-            </tr>
-        </table>
+            </tr> -->
+       
     </form>
+</div>
+
 </body>
+<script type="text/javascript" src="../../lib/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="../../lib/jquery-form.js"></script>
+<script type="text/javascript" src="../../js/update_userinfo.js"></script>
 </html>

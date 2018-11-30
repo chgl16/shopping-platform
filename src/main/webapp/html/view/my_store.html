@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>店铺</title>
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+    <link rel="stylesheet" type="text/css" href="../../font/iconfont.css">
+    <link rel="stylesheet" href="../../lib/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/index.css">
+</head>
+<body>
+<!-- 没有店铺的时候显示 -->
+<div id="newStore">
+    <!-- 跳转申请新店铺 -->
+    <h3>你还没有店铺</h3>
+    <a href="apply_store.html" style="display: block">=>申请新店铺</a>
+    <a href="index.html" style="display: block">=>返回首页</a>
+</div>
+<div id="store">
+<div class="page-group">
+    <div class="page page-current">
+        <header class="bar bar-nav">
+            <a href="store.html" class="icon icon-left pull-left external"></a>
+            <h1 class="title">店铺宝贝</h1>
+        </header>
+        <div class="content">
+
+            <div class="content-block header-bar block-store">
+                <img class="store-img" src="../../img/loading.gif" alt="图片加载失败">
+                <div class="menu-icon store-name"><i class="iconfont icon-dianpu"></i><span id="store_name">乱世佳人</span></div>
+            </div>
+
+            <!-- <div class="store-introduce"></div> -->
+            <div class="swiper-container swiper-container-index">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a class="external swiper-wrapper-body" href=""><img src="../../img/loading.jpg" alt="图片加载失败"></a></div>
+                    <div class="swiper-slide"><a class="external swiper-wrapper-body" href=""><img src="../../img/loading.jpg" alt="图片加载失败"></a></div>
+                    <div class="swiper-slide"><a class="external swiper-wrapper-body" href=""><img src="../../img/loading.jpg" alt="图片加载失败"></a></div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+
+            <div class="categories  categories-list categories-store-list">
+                <a class="external category-list" href="product_details.html" ><div class="category-list-img"><img src="../../img/loading.jpg" alt="failed" /><div class="category-name category-list-name">图书列表</div></div></a>
+                <a class="external category-list" href="product_details.html" ><div class="category-list-img"><img src="../../img/loading.jpg" alt="failed" /><div class="category-name category-list-name">图书列表</div></div></a>
+                <a class="external category-list" href="product_details.html" ><div class="category-list-img"><img src="../../img/loading.jpg" alt="failed" /><div class="category-name category-list-name">图书列表</div></div></a>
+                <a class="external category-list" href="product_details.html" ><div class="category-list-img"><img src="../../img/loading.jpg" alt="failed" /><div class="category-name category-list-name">图书列表</div></div></a>
+            </div>
+
+            <nav class="bar bar-tab">
+                <a class="tab-item external active" href="index.html">
+                    <i class="icon icon-home iconfont icon-fanhui"></i>
+                    <span class="tab-label">返回主页</span>
+                </a>
+                <a class="tab-item external" href="../manage/shop_back.html">
+                    <i class="icon icon-home iconfont icon-dianpu"></i>
+                    <!-- 页面跳转 -->
+                    <span class="tab-label">管理店铺</span>
+                </a>
+            </nav>
+
+        </div>
+    </div>
+</div>
+
+<div class="panel-overlay"></div>
+<!-- Left Panel with Reveal effect -->
+<div class="panel panel-left panel-reveal theme-dark" id='panel-left-demo'>
+    <div class="content-block user-info">
+        <div class="user-img"><img class="head-portrait" src="../../img/loading.jpg" alt="图片加载失败"></div>
+        <p><div class="close-icon"><i class="iconfont icon-guanbi close-panel"></i></div></p>
+    </div>
+    <div class="list-block">
+        <div class="user-status"><span>你好，岁忧郁习惯了蓝</span></div>
+        <!-- <div class="user-status"><span class="user-login">登录</span><span class="user-register">新用户注册</span></div> -->
+        <div class="info-list">
+            <a class="external list-item" href=""><i class="iconfont icon-shouye open-panel"></i>首页</a>
+            <a class="external list-item" href=""><i class="iconfont icon-dizhi open-panel"></i>收货地址</a>
+            <a class="external list-item" href=""><i class="iconfont icon-icon- open-panel"></i>我的订单</a>
+            <a class="external list-item" href=""><i class="iconfont icon-gouwuche open-panel"></i>购物车</a>
+            <a class="external list-item" href=""><i class="iconfont icon-gerenzhongxin open-panel"></i>性别</a>
+            <a class="external list-item" href=""><i class="iconfont icon-tuichu open-panel"></i>退出登录</a>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+</body>
+<script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+<script src="../../lib/dist/js/swiper.min.js"></script>
+<script src="../../lib/jquery-3.3.1.js"></script>
+<script src="../../lib/jquery-3.3.1.js"></script>
+<script src="../../js/my_store.js"></script>
+</html>

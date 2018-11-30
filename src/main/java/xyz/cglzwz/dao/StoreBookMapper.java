@@ -81,4 +81,11 @@ public interface StoreBookMapper {
      * @return List<Book>
      */
     public List<Book> selectStoreBookShow(@Param("storeId") int storeId, @Param("limit") int limit);
+
+    /**
+     * 产生订单后更新书的库存和销量
+     *
+     * @param bookId
+     */
+    public void updateBookVolume(int bookId);
 }

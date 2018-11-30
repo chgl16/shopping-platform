@@ -14,37 +14,38 @@ import java.util.List;
 
 public interface TransactionService {
     /**
-     * 购物生成订单
+     * 通过id获取一个订单
      *
-     * @param transaction
+     * @param transactionId
+     * @return
      */
-    public void generateTransaction(Transaction transaction);
+    public Transaction getTransaction(int transactionId);
 
     /**
      * 用户获取自己的所有订单
      *
-     * @param userId
+     * @param customerId
      * @return
      */
-    public List<Transaction> getUserAllTransaction(int userId);
+    public List<Transaction> getCustomerAllTransaction(int customerId);
 
     /**
      * 用户获取自己所以的未完成（待收货）订单
      * 即status != 2
      *
-     * @param userId
+     * @param customerId
      * @return
      */
-    public List<Transaction> getUserUnfinishedTransaction(int userId);
+    public List<Transaction> getCustomerUnfinishedTransaction(int customerId);
 
     /**
      * 用户获取自己未发货的订单
      * 即status = -1
      *
-     * @param userId
+     * @param customerId
      * @return
      */
-    public List<Transaction> getUserUnsentTransaction(int userId);
+    public List<Transaction> getCustomerUnsentTransaction(int customerId);
 
     /**
      * 店铺获取其所有订单
@@ -69,7 +70,7 @@ public interface TransactionService {
      * @param storeId
      * @return
      */
-    public List<Transaction> getStoreUnfinshedTransaction(int storeId);
+    public List<Transaction> getStoreUnfinishedTransaction(int storeId);
 
     /**
      * 运营商获取所有订单
@@ -83,4 +84,11 @@ public interface TransactionService {
      * @return
      */
     public List<Transaction> getUnfinishTransaction();
+
+    /**
+     * 更新为发货状态
+     *
+     * @param transactionId
+     */
+    public void updateStatusToSend(int transactionId);
 }
