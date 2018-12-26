@@ -12,19 +12,20 @@ mvn package
 
 ## 效果
 #### 1.客户端页面
-![首页](img-folder/index.png) &nbsp;
+![首页](img-folder/index.png) &nbsp;&nbsp;
 ![搜索](img-folder/search.png)
-<br>
-![书详情](img-folder/detail.png) &nbsp;
+<hr><br>
+![书详情](img-folder/detail.png) &nbsp;&nbsp;
 ![店铺](img-folder/store.png)
-<br>
-![下单](img-folder/order.png) &nbsp;
+<hr><br>
+![下单](img-folder/order.png) &nbsp;&nbsp;
 ![我的淘宝](img-folder/mine.png)
-<br>
+<hr><br>
 ![支付](img-folder/alipay.png)
 #### 2.后台管理页面
-![店铺宝贝](img-folder/store-manage1.png)
+![店铺宝贝](img-folder/store-manage1.png) &nbsp;&nbsp;
 ![店铺订单](img-folder/store-manage2.png)
+<hr><br>
 ![运营商管理店铺申请](img-folder/operator-manage.png)
 ## 注意
 
