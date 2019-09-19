@@ -1,5 +1,5 @@
 # shopping-platform
-    基于SSM + Redis开发的网购平台
+    基于SSM开发的移动购物书城
     支付使用支付宝沙箱API
     
 ## 环境
